@@ -6,42 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Práctica GRID</title>
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos.css">    
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>HEADER</h1>
-            <p>12 COLUMNAS</p>
+        <header class="row">
+            <div class="col">
+                <h1>HEADER</h1>
+                <p>12 COLUMNAS</p>
+            </div>           
         </header>
-        <section class="contenedor-main">
-            <main>
-                <h2>MAIN</h2>
-                <p>8 Columnas</p>
+        <section class="contenedor-main row align-items-center">
+            <main class="col-12 col-md-8">
+                <h2 id="titulo">MAIN</h2>
+                <p class="d-none d-md-block">8 Columnas</p>
+                <p class="d-block d-md-none">12 Columnas</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi adipisci debitis nobis voluptatibus deleniti dolores quae corrupti nostrum veritatis. Est!</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, corporis?</p>
             </main>
-            <aside>
+            <aside class="col-12 col-md-4">
                 <h2>ASIDE</h2>
-                <p>4 Columnas</p>
+                <p class="d-none d-md-block">4 Columnas</p>
+                <p class="d-block d-md-none">12 Columnas</p>
             </aside>
         </section>
-        <section class="widgets">
-            <div>
-                <p>3 Columnas</p>
+        <section class="row widgets justify-content-between">
+            <div class="col-12 col-md-4 col-lg-3">
+                <p class="d-block d-md-none">12 Columnas</p>
+                <p class="d-none d-md-block d-lg-none">4 Columnas</p>
+                <p class="d-none d-lg-block">3 Columnas</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, voluptates perferendis? Rerum dolorem magnam nulla eos minima consectetur enim dolor?</p>
             </div>
-            <div>
-                <p>3 Columnas</p>
+            <div class="col-12 col-md-4 col-lg-3">
+                <p class="d-block d-md-none">12 Columnas</p>
+                <p class="d-none d-md-block d-lg-none">4 Columnas</p>
+                <p class="d-none d-lg-block">3 Columnas</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, voluptates perferendis? Rerum dolorem magnam nulla eos minima consectetur enim dolor?</p>
             </div>
-            <div>
-                <p>3 Columnas</p>
+            <div class="col-12 col-md-4 col-lg-3">
+                <p class="d-block d-md-none">12 Columnas</p>
+                <p class="d-none d-md-block d-lg-none">4 Columnas</p>
+                <p class="d-none d-lg-block">3 Columnas</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, voluptates perferendis? Rerum dolorem magnam nulla eos minima consectetur enim dolor?</p>
             </div>
         </section>
-        <footer>
-            <div>
+        <footer class="row">
+            <div class="col">
                 <h4>Footer</h4>
                 <div>12 Columnas</div>
             </div>

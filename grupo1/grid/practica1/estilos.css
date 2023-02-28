@@ -17,6 +17,11 @@ header {
     margin-bottom: 20px;
 }
 
+/* Selector por id */
+#titulo {
+    color: red;
+}
+
 main {
     background: #fff;
     color: #424242;
