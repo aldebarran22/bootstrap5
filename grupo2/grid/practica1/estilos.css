@@ -1,0 +1,44 @@
+/* Selector por tipo coincide con el nombre de una etiqueta HTML */
+body {
+    background: #f0f3f5;
+    color: #fff;
+}
+
+header {
+    background: #9aca40;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Selector por clase (empieza por punto) y se relaciona con el att. class de HTML */
+.contenedor-main {
+    margin-bottom: 20px;
+}
+
+main {
+    background: #fff;
+    color: #424242;
+    padding: 20px 0;
+}
+
+aside {
+    background:#dee5e8;
+    color: #0d47a1;
+    padding: 60px 0;
+}
+
+.widget {
+    margin-bottom: 20px;
+}
+
+.widgets > div {
+    background: #2196f3;
+    color: #fff;
+    padding: 20px;
+}
+
+footer {
+    padding: 20px 0;
+    background: #1e1e1e;
+}
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .fila {
+            background:#5a5a5a;
+            margin-top: 20px;
+        }
+        .columna {
+            border: 1px solid #8f8f8f;
+            background: white;
+            text-align: center;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Alineación horizontal. Tiene sentido si las cols no cubren toda la fila -->
+    <div class="container">
+        <!-- A la izquierda -->
+        <div class="row fila justify-content-start">
+            <div class="columna col-4">Columna 1</div>
+            <div class="columna col-4">Columna 2</div>
+        </div>  
+        
+        <!--Alinear a la derecha -->
+        <div class="row fila justify-content-end">
+            <div class="columna col-4">Columna 1</div>
+            <div class="columna col-4">Columna 2</div>
+        </div>   
+
+        <!-- En el centro -->
+        <div class="row fila justify-content-center">
+            <div class="columna col-4">Columna 1</div>
+            <div class="columna col-4">Columna 2</div>
+        </div>   
+        
+        <div class="row fila justify-content-around">
+            <div class="columna col-4">Columna 1</div>
+            <div class="columna col-4">Columna 2</div>
+        </div>  
+        
+        <!-- Las coloca en los extremos de la fila -->
+        <div class="row fila justify-content-between">
+            <div class="columna col-4">Columna 1</div>
+            <div class="columna col-4">Columna 2</div>
+        </div> 
+        
+        <!-- Las distribuye equitativamente-->
+        <div class="row fila justify-content-evenly">
+            <div class="columna col-4">Columna 1</div>
+            <div class="columna col-4">Columna 2</div>
+        </div>   
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
