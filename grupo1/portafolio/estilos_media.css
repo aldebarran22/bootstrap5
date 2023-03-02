@@ -1,0 +1,40 @@
+body {
+    background: #f2f2f2;
+    font-family: Tahoma, Verdana, Geneva, sans-serif
+}
+
+.portafolio {
+    border-top: 5px solid #3da5e2;
+}
+
+.titulo {
+    color: #3da5e2;
+    padding: 30px 0; 
+}
+
+.contenedor-img {
+    /* Limitamos el alto de la imagen y si sobra se corta */
+    max-height: 180px;
+    overflow: hidden;
+}
+
+.contenedor-img a {
+    background:#3da5e2;
+    /* El enlace ocupa toda la imagen */
+    display: inline-block;
+}
+
+.contenedor-img a:HOVER img {
+    opacity: .3;
+}
+
+/* Se corresponde con el tamaño md de bootstrap Tableta */
+@media screen and (max-width: 768px){
+    .galeria .contenedor-img:nth-child(1){ order: 1; }
+    .galeria .contenedor-img:nth-child(2){ order: 3; }
+    .galeria .contenedor-img:nth-child(3){ order: 4; }
+    .galeria .contenedor-img:nth-child(4){ order: 2; }
+    .galeria .contenedor-img:nth-child(5){ order: 5; }
+    .galeria .contenedor-img:nth-child(6){ order: 6; }
+    .galeria .contenedor-img:nth-child(7){ order: 7; }
+}
