@@ -1,0 +1,25 @@
+
+
+/* Resoluciones de pantalla < 640 px */
+@media screen and (max-width:640px){
+
+    h2 {
+        background: #2c2c2c;
+        color: white;
+    }
+}
+
+/* Resoluciones de pantalla > 640 px y < 1280 px */
+@media screen and (min-width:640px) and (max-width:1280px){
+
+    h2 {
+        background: #5c5c00;
+    }
+}
+
+@media screen and (min-width:1280px){
+
+    h2 {
+        background: #5c0000;
+    }
+}

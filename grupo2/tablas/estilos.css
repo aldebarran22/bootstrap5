@@ -1,0 +1,30 @@
+
+/* Cambiar los estilos de la clase: table-striped */
+
+.table-striped > tbody > tr:nth-child(odd){
+    background: #3da5e2;     
+}
+
+.table-striped > tbody > tr:nth-child(even){
+    background: #550000; 
+    color: #fff;
+}
+
+/* Personalizar la selección de la fila: hover */
+
+.table-hover > tbody > tr:hover {
+    background: #00A400;    
+}
+
+/* Personalizar una tabla con la cabecera fija */
+thead tr th { 
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #ffffff;
+}
+
+.table-responsive { 
+    height:200px;
+    overflow-y:scroll;  
+}

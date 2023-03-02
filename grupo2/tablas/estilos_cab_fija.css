@@ -1,0 +1,13 @@
+
+/* Personalizar una tabla con la cabecera fija */
+
+
+.table-scroll thead tr {   
+  display: inline-block;
+}
+
+.table-scroll tbody {
+    max-height: 200px;
+    overflow-y: auto;    
+    display: inline-block;    
+}
