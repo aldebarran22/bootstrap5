@@ -1,0 +1,14 @@
+
+.table-striped > tbody > tr:nth-child(odd){
+    background: #3da5e2;
+}
+
+.table-striped > tbody > tr:nth-child(even){
+    background: #550000;
+    color: #fff;
+}
+
+/* Para marcar la fila a seleccionar */
+.table-hover > tbody > tr:hover {
+    background: #00A400;
+}

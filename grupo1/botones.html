@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">   
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Botones</h3>              
+                <button type="button" class="btn btn-primary">Botón 1</button>
+                <button type="button" class="btn btn-outline-dark">Botón 2</button>
+                <button type="button" class="btn btn-secondary" disabled>Botón 3</button>
+                <button type="button" class="btn btn-info disabled">Botón 4</button>
+                <button type="button" class="btn">Botón 5</button>
+                <button type="button" class="btn">Botón 6</button>
+                <button type="button" class="btn btn-link">Botón enlace</button>
+                <button type="submit" class="btn btn-danger">Tipo submit</button>
+                <a href="#" class="btn btn-primary" title="boton">Enlace como botón</a>
+                <button type="submit" [disabled]="!form.form.valid">
+                    Save
+                </button>
+                <p class="btn btn-primary m-0">Prueba</p>
+                <span class="btn btn-dark">Span boton</span>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary">Botón 1</button>
+                <button type="button" class="btn btn-lg btn-primary">Botón 1</button>
+                <button type="button" class="btn btn-sm btn-primary">Botón 1</button>
+            </div>
+            <hr class="mt-5">        
+            <div class="col-12">
+                <!-- Repartir botones en una fila a la misma distancia entre ellos y
+                ocupando toda la fila -->
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="btn btn-primary">Botón 1</button>
+                    <button type="button" class="btn btn-primary">Botón 2</button>
+                    <button type="button" class="btn btn-secondary">Botón 3</button>
+                </div>
+            </div>
+            <hr class="mt-5">        
+            <div class="col-12">
+                <!-- Repartir botones en una fila a la misma distancia entre ellos y
+                ocupando toda la fila -->
+                <div class="d-flex justify-content-around">
+                    <button type="button" class="btn btn-primary">Botón 1</button>
+                    <button type="button" class="btn btn-primary">Botón 2</button>
+                    <button type="button" class="btn btn-secondary">Botón 3</button>
+                </div>
+            </div>
+            <hr class="mt-5">        
+            <div class="col-6">
+                <!-- Reparte los botones cada uno en el contenedor entero -->
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-primary">Botón 1</button>
+                    <button type="button" class="btn btn-primary">Botón 2</button>
+                    <button type="button" class="btn btn-secondary">Botón 3</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>   
+</body>
+</html>

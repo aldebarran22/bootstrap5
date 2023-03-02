@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">   
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-primary mt-3" role="alert">
+                    <strong>Aviso</strong> Lorem ipsum dolor sit amet consectetur adipisicing.
+                    <a href="#" class="alert-link" title="enlace"></a>
+                </div>            
+            </div>
+            <div class="col">
+                <div class="alert alert-danger mt-3" role="alert">
+                    <strong>Aviso</strong> Lorem ipsum dolor sit amet consectetur adipisicing.
+                    <a href="#" class="alert-link" title="enlace"></a>
+                </div>            
+            </div>
+            <div class="col">
+                <div class="alert alert-success mt-3" role="alert">
+                    <strong>Aviso</strong> Lorem ipsum dolor sit amet consectetur adipisicing.
+                    <a href="#" class="alert-link" title="enlace"></a>
+                </div>            
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <!-- Alerta con una animación de cerrar -->
+                <!-- data-bs-dismiss="alert" Para cerrar el alert -->
+                <!-- aria-label="Cerrar" Para lectores de pantalla. No muestra nada-->
+                <!-- Para poder cerrar el alert  alert-dismissible -->
+                <div class="alert alert-success alert-dismissible mt-3" role="alert">
+                    <h3 class="text-center text-primary">Titulo de la Alerta</h3>
+                    <hr>
+                    <strong>Aviso</strong> Lorem ipsum dolor sit amet consectetur adipisicing.
+                    <a href="#" class="alert-link" title="enlace">Ver más ...</a>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>   
+</body>
+</html>

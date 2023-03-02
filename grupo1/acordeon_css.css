@@ -1,0 +1,26 @@
+
+/* Solo para cambiar uno */
+#principal .accordion-button {
+    background: orange;
+    color: #000
+
+}
+
+#principal .accordion-body {
+    background: black;
+    color: #fff;
+}
+
+
+/*
+Para cambiar la clase accordion de BS
+
+.accordion .accordion-button {
+    background: orange;
+    color: #000
+}
+
+.accordion .accordion-body {
+    background: black;
+    color: #fff;
+}*/

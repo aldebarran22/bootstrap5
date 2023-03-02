@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupos de botones</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">   
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <!-- Grupo de botones -->
+                <div class="btn-group" role="group" aria-label="Grupo de botones">
+                    <button type="button" class="btn btn-primary active">Botón 1</button>
+                    <button type="button" class="btn btn-primary">Botón 2</button>
+                    <button type="button" class="btn btn-primary">Botón 3</button>
+                </div>               
+            </div>
+            <div class="col-3">
+                <!-- Grupo de botones -->
+                <div class="btn-group" role="group" aria-label="Grupo de botones">
+                    <button type="button" class="btn btn-outline-primary active">Botón 1</button>
+                    <button type="button" class="btn btn-outline-primary">Botón 2</button>
+                    <button type="button" class="btn btn-outline-primary">Botón 3</button>
+                </div>        
+            </div>
+            <div class="col-3">
+                <!-- Grupo de botones grandes -->
+                <div class="btn-group btn-group-lg" role="group" aria-label="Grupo de botones">
+                    <button type="button" class="btn btn-outline-primary active">Botón 1</button>
+                    <button type="button" class="btn btn-outline-primary">Botón 2</button>
+                    <button type="button" class="btn btn-outline-primary">Botón 3</button>
+                </div>        
+            </div>
+            <div class="col-3">
+                <!-- Grupo de botones pequeños -->
+                <div class="btn-group btn-group-sm" role="group" aria-label="Grupo de botones">
+                    <button type="button" class="btn btn-outline-primary active">Botón 1</button>
+                    <button type="button" class="btn btn-outline-primary">Botón 2</button>
+                    <button type="button" class="btn btn-outline-primary">Botón 3</button>
+                </div>        
+            </div>
+            <hr mt-3>
+            <div class="col-6">
+                <!-- Grupos de botones con CheckBox -->
+                <div class="btn-group" role="group" aria-label="Grupo de botones">
+                    <input type="checkbox" id="checkbox-1" name="checkbox-1" class="btn-check">
+                    <label for="checkbox-1" class="btn btn-outline-primary">CheckBox1</label>
+
+                    <input type="checkbox" id="checkbox-2" name="checkbox-2" class="btn-check">
+                    <label for="checkbox-2" class="btn btn-outline-primary">CheckBox2</label>
+
+                    <input type="checkbox" id="checkbox-3" name="checkbox-3" class="btn-check">
+                    <label for="checkbox-3" class="btn btn-outline-primary">CheckBox3</label>
+                </div>
+            </div>
+            <div class="col-6">
+                <!-- Grupos de botones con RadioButtons -->
+                <div class="btn-group" role="group" aria-label="Grupo de botones">
+                    <input type="radio" id="radio-1" name="radio" class="btn-check">
+                    <label for="radio-1" class="btn btn-outline-primary">radio1</label>
+
+                    <input type="radio" id="radio-2" name="radio" class="btn-check">
+                    <label for="radio-2" class="btn btn-outline-primary">radio2</label>
+
+                    <input type="radio" id="radio-3" name="radio" class="btn-check">
+                    <label for="radio-3" class="btn btn-outline-primary">radio3</label>
+                </div>
+            </div>
+            <hr class="mt-5">
+            <div class="col12">
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar">
+                    <div class="btn-group me-4" role="group" aria-label="Grupo de botones">
+                        <button type="button" class="btn btn-outline-primary active">Nuevo</button>
+                        <button type="button" class="btn btn-outline-primary">Editar</button>
+                        <button type="button" class="btn btn-outline-primary">Guardar</button>
+                    </div>    
+                    <div class="btn-group me-2" role="group" aria-label="Grupo de botones">
+                        <button type="button" class="btn btn-outline-primary active">Copiar</button>
+                        <button type="button" class="btn btn-outline-primary">Cortar</button>
+                        <button type="button" class="btn btn-outline-primary">Pegar</button>
+                    </div> 
+                    <div class="btn-group" role="group" aria-label="Grupo de botones">
+                        <input type="radio" id="radio-4" name="radio2" class="btn-check">
+                        <label for="radio-4" class="btn btn-outline-primary">radio1</label>
+    
+                        <input type="radio" id="radio-5" name="radio2" class="btn-check">
+                        <label for="radio-5" class="btn btn-outline-primary">radio2</label>
+    
+                        <input type="radio" id="radio-6" name="radio2" class="btn-check">
+                        <label for="radio-6" class="btn btn-outline-primary">radio3</label>
+                    </div>   
+                </div>
+            </div>
+            <hr class="mt-5">
+            <div class="col-12">
+                <div class="btn-group-vertical" role="group" aria-label="Grupo de botones">
+                    <button type="button" class="btn btn-outline-primary active">Copiar</button>
+                    <button type="button" class="btn btn-outline-primary">Cortar</button>
+                    <button type="button" class="btn btn-outline-primary">Pegar</button>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>   
+</body>
+</html>
