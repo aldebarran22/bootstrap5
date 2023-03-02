@@ -1,0 +1,29 @@
+/* Cambiar los colores de todos los acordeones */
+
+/* Todos los acordeones:
+.accordion .accordion-button {
+    background: orange;
+    color: #000;
+}
+
+.accordion .accordion-body {
+    background: black;
+    color:#fff;
+}*/
+
+#secundario .accordion-button {
+    background: orange;
+    color: #000;
+}
+
+#secundario .accordion-body {
+    background: black;
+    color:#fff;
+}
+
+/* Cambiar el color del boton */
+.accordion .accordion-button:focus {
+    z-index: 3;
+    border-color: #000;
+    outline: 0!important;
+}

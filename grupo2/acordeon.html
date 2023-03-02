@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acordeón</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="acordeon_css.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+                <!-- Contenedor principal 
+                Sin bordes: accordion-flush 
+                Cambiar colores:
+                header en el botón:     bg-color  text-color
+                cuerpo: accordion-body: bg-color  text-color
+
+                En CSS: background y color
+                -->
+                <div class="accordion" id="principal">
+                    <!--Elemento 1 -->
+                    <div class="accordion-item">
+                        <!-- Cabecera del item -->
+                        <h2 class="accordion-header" id="titulo1">
+                            <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                data-bs-target="#contenido1" aria-expanded="true" aria-controls="contenido1">
+                                Capítulo 1
+                            </button>
+                        </h2>
+
+                        <!-- El contenido del item -->
+                        <div id="contenido1" class="accordion-collapse collapse show" aria-labelledby="titulo1"
+                            data-bs-parent="#principal">
+
+                            <!-- El cuerpo  del contenido -->
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae consectetur
+                                    nulla molestias laboriosam saepe dignissimos iure aspernatur ex accusantium.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Elemento 2 -->
+                    <div class="accordion-item">
+                        <!-- Cabecera del item -->
+                        <h2 class="accordion-header" id="titulo2">
+                            <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                data-bs-target="#contenido2" aria-expanded="true" aria-controls="contenido2">
+                                Capítulo 2
+                            </button>
+                        </h2>
+
+                        <!-- El contenido del item -->
+                        <div id="contenido2" class="accordion-collapse collapse" aria-labelledby="titulo2"
+                            data-bs-parent="#principal">
+
+                            <!-- El cuerpo  del contenido -->
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae consectetur
+                                    nulla molestias laboriosam saepe dignissimos iure aspernatur ex accusantium.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Elemento 3 -->
+                    <div class="accordion-item">
+                        <!-- Cabecera del item -->
+                        <h2 class="accordion-header" id="titulo3">
+                            <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                data-bs-target="#contenido3" aria-expanded="true" aria-controls="contenido2">
+                                Capítulo 3
+                            </button>
+                        </h2>
+
+                        <!-- El contenido del item -->
+                        <div id="contenido3" class="accordion-collapse collapse" aria-labelledby="titulo3"
+                            data-bs-parent="#principal">
+
+                            <!-- El cuerpo  del contenido -->
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae consectetur
+                                    nulla molestias laboriosam saepe dignissimos iure aspernatur ex accusantium.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mt-5">
+                <div class="accordion" id="secundario">
+                    <!--Elemento 1 -->
+                    <div class="accordion-item">
+                        <!-- Cabecera del item -->
+                        <h2 class="accordion-header" id="titulosecun1">
+                            <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                data-bs-target="#contenidosecun1" aria-expanded="true" aria-controls="contenidosecun1">
+                                Capítulo 1
+                            </button>
+                        </h2>
+
+                        <!-- El contenido del item -->
+                        <div id="contenidosecun1" class="accordion-collapse collapse show" aria-labelledby="titulosecun1"
+                            data-bs-parent="#secundario">
+
+                            <!-- El cuerpo  del contenido -->
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae consectetur
+                                    nulla molestias laboriosam saepe dignissimos iure aspernatur ex accusantium.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Elemento 2 -->
+                    <div class="accordion-item">
+                        <!-- Cabecera del item -->
+                        <h2 class="accordion-header" id="titulosecun2">
+                            <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                data-bs-target="#contenidosecun2" aria-expanded="true" aria-controls="contenidosecun2">
+                                Capítulo 2
+                            </button>
+                        </h2>
+
+                        <!-- El contenido del item -->
+                        <div id="contenidosecun2" class="accordion-collapse collapse" aria-labelledby="titulosecun2"
+                            data-bs-parent="#secundario">
+
+                            <!-- El cuerpo  del contenido -->
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae consectetur
+                                    nulla molestias laboriosam saepe dignissimos iure aspernatur ex accusantium.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Elemento 3 -->
+                    <div class="accordion-item">
+                        <!-- Cabecera del item -->
+                        <h2 class="accordion-header" id="titulosecun3">
+                            <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                data-bs-target="#contenidosecun3" aria-expanded="true" aria-controls="contenidosecun3">
+                                Capítulo 3
+                            </button>
+                        </h2>
+
+                        <!-- El contenido del item -->
+                        <div id="contenidosecun3" class="accordion-collapse collapse" aria-labelledby="titulosecun3"
+                            data-bs-parent="#secundario">
+
+                            <!-- El cuerpo  del contenido -->
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae consectetur
+                                    nulla molestias laboriosam saepe dignissimos iure aspernatur ex accusantium.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
