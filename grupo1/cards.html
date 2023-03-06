@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">   
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- La tarjeta ocupa toda la fila -->
+                <div class="card">
+                    <div class="card-body">
+                        <h1>Encabezado</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quo aut quam, accusantium temporibus id obcaecati explicabo facilis! Vel, magni.</p>
+                    </div>
+                </div>             
+            </div>
+        </div>
+        <!-- 3 tarjetas en la misma fila -->
+        <div class="row mt-5">
+            <div class="col-4">
+                <!-- Una tarjeta con foto sup. titulo, subtitulo, texto y enlace -->
+                <div class="card">
+                    <img src="img/bg.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Título</h5>
+                        <h6 class="card-subtitle text-muted mb-2">Subtítulo</h6>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, asperiores iusto. Illum pariatur explicabo officia!</p>
+                        <a href="#" title="enlace" class="btn btn-outline-primary">Botón</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <!-- Una tarjeta con foto inf. titulo, subtitulo, texto y enlace -->
+                <div class="card">                    
+                    <div class="card-body">
+                        <h5 class="card-title">Título</h5>
+                        <h6 class="card-subtitle text-muted mb-2">Subtítulo</h6>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, asperiores iusto. Illum pariatur explicabo officia!</p>
+                        <a href="#" title="enlace" class="btn btn-outline-primary">Botón</a>
+                    </div>
+                    <img src="img/bg.jpg" alt="" class="card-img-bottom">
+                </div>
+            </div>
+
+            <div class="col-4">               
+                <div class="card">                    
+                    <img src="img/bg.jpg" alt="" class="card-img-bottom">
+                    <div class="card-body">
+                        <h5 class="card-title">Título</h5>
+                        <h6 class="card-subtitle text-muted mb-2">Subtítulo</h6>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, asperiores iusto. Illum pariatur explicabo officia!</p>
+                        <a href="#" title="enlace" class="btn btn-outline-primary">Botón</a>
+                    </div>                    
+                </div>
+            </div>            
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-4">
+                <!-- Tarjeta con una lista -->
+                <div class="card">
+                    <img src="img/bg.jpg" alt="" class="card-img-top">
+                    <!-- Con la clase list-group-flush (quita los bordes de la lista)-->
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Elemento 1</li>
+                        <li class="list-group-item">Elemento 2</li>
+                        <li class="list-group-item">Elemento 3</li>                        
+                    </ul>
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus modi iusto et porro id odit?</p>
+                        <a href="#" title="" class="card-link">Enlace</a>                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <!-- Tarjeta con header, body y footer -->
+                <div class="card">
+                    <div class="card-header">Encabezado</div>
+                    <img src="img/bg.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Título</h5>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, dolor!</p>
+                    </div>
+                    <div class="card-footer">Pie de página</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <!-- Tarjeta de texto centrado -->
+                <div class="card text-center">
+                    <div class="card-header">cita</div>
+                    <div class="card-body">
+                        <blockquote class="blockquote">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, reiciendis!</p>
+                            <footer class="blockquoute-footer">Lorem, ipsum dolor.</footer>                            
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>   
+</body>
+</html>

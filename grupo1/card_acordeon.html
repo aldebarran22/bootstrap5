@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card + Acordeón</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="card">
+                    <img src="img/bg.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Título</h5>
+                        <h6 class="card-subtitle text-muted mb-4">Subtítulo</h6>
+                        <div class="accordion" id="principal">
+                            <!-- Elemento 1 -->
+                            <div class="accordion-item">
+                                <!-- Cabecera: -->
+                                <h2 class="accordion-header" id="titulo1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#contenido1" aria-expanded="true"
+                                        aria-controls="contenido1">Capítulo 1
+                                    </button>
+                                </h2>
+                                <!-- El contenido -->
+                                <div id="contenido1" class="accordion-collapse collapse show" aria-labelledby="titulo1"
+                                    data-bs-parent="#principal">
+
+                                    <!-- El cuerpo  del contenido -->
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, minima?</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Elemento 2 -->
+                            <div class="accordion-item">
+                                <!-- Cabecera: -->
+                                <h2 class="accordion-header" id="titulo2">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#contenido2" aria-expanded="true"
+                                        aria-controls="contenido2">Capítulo 2
+                                    </button>
+                                </h2>
+                                <!-- El contenido -->
+                                <div id="contenido2" class="accordion-collapse collapse" aria-labelledby="titulo2"
+                                    data-bs-parent="#principal">
+
+                                    <!-- El cuerpo  del contenido -->
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, minima?</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Elemento 3 -->
+                            <div class="accordion-item">
+                                <!-- Cabecera: -->
+                                <h2 class="accordion-header" id="titulo3">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#contenido3" aria-expanded="true"
+                                        aria-controls="contenido3">Capítulo 3
+                                    </button>
+                                </h2>
+                                <!-- El contenido -->
+                                <div id="contenido3" class="accordion-collapse collapse" aria-labelledby="titulo3"
+                                    data-bs-parent="#principal">
+
+                                    <!-- El cuerpo  del contenido -->
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, minima?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" title="enlace" class="btn btn-outline-primary mt-3">Botón</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas 2</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">   
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-6">
+                <!-- Tarjeta con un menu de navegación -->
+                <div class="card">
+                    <img src="img/bg.jpg" alt="" class="card-img-top">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Enlace 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Enlace 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active">Enlace 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Título</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        <button type="button" class="btn btn-primary">Botón</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <!-- Tarjeta con un menu de navegación en píldoras -->
+                <div class="card">
+                    <img src="img/bg.jpg" alt="" class="card-img-top">
+                    <div class="card-header">
+                        <ul class="nav nav-pills card-header-pills">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Enlace 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Enlace 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active">Enlace 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Título</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        <button type="button" class="btn btn-primary">Botón</button>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <!-- Personalizar colores de la card: bg-color (background), 
+            text-color (texto), border-color (el borde de la tarjeta)  -->      
+        <div class="row mt-5">
+            <div class="col-4">
+                <div class="card bg-primary text-white">
+                    <div class="card-header">Encabezado</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Titulo</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, id.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">Encabezado</div>
+                    <div class="card-body bg-success-subtle">
+                        <h4 class="card-title">Titulo</h4>
+                        <p class="card-text text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, id.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card border-danger">
+                    <div class="card-header">Encabezado</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Titulo</h4>
+                        <p class="card-text text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, id.</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, quidem.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Agrupar tarjetas -->
+            <div class="col-12 mt-5 mb-5">
+                <div class="card-group">
+                    <!-- me: margin-end en CSS es: margin-right -->
+                    <div class="card">
+                        <div class="card-header">Encabezado</div>
+                        <div class="card-body bg-success-subtle">
+                            <h4 class="card-title">Titulo</h4>
+                            <p class="card-text text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, id.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">Encabezado</div>
+                        <div class="card-body bg-success-subtle">
+                            <h4 class="card-title">Titulo</h4>
+                            <p class="card-text text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, id.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">Encabezado</div>
+                        <div class="card-body bg-success-subtle">
+                            <h4 class="card-title">Titulo</h4>
+                            <p class="card-text text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, id.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>   
+</body>
+</html>
