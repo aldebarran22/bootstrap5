@@ -207,6 +207,30 @@ a {
 .main .comentarios .comentario .botones .eliminar:hover {background: #c9302c;}
 .main .comentarios .comentario .botones .bloquear:hover {color: #fff; background: #acacac;}
 
+/* Media queries */
+
+@media screen and (max-width:768px){
+    .main .comentarios .comentario .botones button {
+        width: 100%;
+    }
+}
+
+/* Dispositivo large: monitor*/
+@media screen and (max-width:1200px){
+
+    .barra-lateral .logo {
+        display: none;
+    }
+
+    .barra-lateral .menu a svg {
+        display: none;
+    }
+
+    .main .comentarios .comentario .foto {
+        height:30px;
+        width: 30px;
+    }
+}
 
 
 

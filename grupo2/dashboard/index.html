@@ -24,7 +24,8 @@
     <div class="container-fluid">
         <div class="row">
             <!-- Barra lateral izquierda -->
-            <aside class="barra-lateral col-auto p-0">
+            <!--12 cols por defecto y col-auto a partir de md-->
+            <aside class="barra-lateral col-12 col-md-auto p-0">
                 <div class="logo">
                     <h2 class="py-4 m-0">
                         Dashboard
@@ -32,7 +33,13 @@
                 </div>
 
                 <!--Menu lateral izq. -->
-                <nav class="menu">
+                <!-- 
+                    d-flex: se colocan en horizontal
+                    justify-content-center: se centran
+                    flex-wrap: baja un elemento a la linea de abajo cuando no cabe
+                    A partir del tam. mediano (md) ver en block
+                -->
+                <nav class="menu d-flex justify-content-center flex-wrap d-md-block">
                     <a href="#" title="inicio">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-house-door-fill" viewBox="0 0 16 16">
@@ -82,7 +89,9 @@
             <main class="main col">
                 <div class="row">
                     <!-- El formulario central -->
-                    <div class="columna col-7">
+                    <!-- 12 cols por defecto 
+                    y 7 cols a partir del lg -->
+                    <div class="columna col-12 col-lg-7">
                         <div class="widget nueva_entrada">
                             <h3 class="titulo">Nueva Entrada</h3>
                             <form action="">
@@ -102,8 +111,10 @@
                             </form>
                         </div>
                     </div>
-                    <!--Estadísticas y Comentarios -->
-                    <div class="columna col-5">
+                    <!--Estadísticas y Comentarios 
+                    12 cols por defecto 
+                    y 5 cols a partir de lg -->
+                    <div class="columna col-12 col-lg-5">
 
                         <!-- Estadisticas -->
                         <div class="widget estadisticas">
