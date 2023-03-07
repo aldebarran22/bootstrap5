@@ -3,6 +3,10 @@ body {
     font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif
 }
 
+a {
+    text-decoration: none;
+}
+
 /* ESTILOS DE LA CABECERA: LOGO, BOTONES Y SLIDER */
 header .nav {
     min-height: 80px;
@@ -10,6 +14,13 @@ header .nav {
     overflow: hidden;
 }
 
+header .menu .enlaceP {background:#3da5e2;}
+header .menu .enlaceA {background: #005385;}
+header .menu .enlaceC {background: #003855;}
+
+header .menu .enlace:HOVER {background:#1BA0EF;}
+header .menu .enlaceA:HOVER {background: #00426A;}
+header .menu .enlaceC:HOVER {background: #002D44;}
 
 /* ESTILOS GALERIA DE IMAGENES */
 .portafolio {

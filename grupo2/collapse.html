@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Collapse con el enlace -->
+            <div class="col-6">
+                <a href="#contenido1"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+                aria-controls="contenido1">
+                    Información
+                </a>
+
+                <div class="collapse mt-3" id="contenido1">
+                    <!-- El contenido que queremos mostrar -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Título</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, voluptatem!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Collapse con el botón -->
+            <div class="col-6">
+                <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="collapse"
+                data-bs-target="#contenido2"
+                aria-expanded="false"
+                aria-controls="contenido2"
+                >Información 2</button>
+                <div class="collapse mt-3" id="contenido2">
+                    <!-- El contenido que queremos mostrar -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Título 2</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, voluptatem!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

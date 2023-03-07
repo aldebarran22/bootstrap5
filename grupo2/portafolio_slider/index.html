@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,25 +9,60 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="estilos_media.css">
 </head>
+
 <body>
     <!--La cabecera -->
     <header class="container">
-        <div class="nav row justify-content-between">
+        <div class="nav row g-0 justify-content-between rounded-top">
 
             <!-- Logotipo 
             El titulo y el párrafo tienen que estar en horizontal y
             alineados verticalmente.
             -->
-            <div class="col-12 col-lg-auto d-flex align-items-center">
+            <div class="col-12 col-lg-auto d-flex align-items-center ps-4">
                 <h2 class="titulo">PORTAFOLIO</h2>
-                <p class="mb-0">Curso de Bootstrap</p>
+                <p class="mb-0 ms-3">Curso de Bootstrap</p>
             </div>
 
             <!--Enlaces -->
             <nav class="menu col-12 col-lg-auto d-flex">
-                <a href="#" title="Portafolio" class="enlaceP">Portafolio</a>
-                <a href="#" title="Acerca de" class="enlaceA">Acerca de</a>
-                <a href="#" title="Contacto" class="enlaceC">Contacto</a>
+                <a href="#" title="Portafolio" class="enlaceP px-4 d-flex align-items-center text-center text-white">
+                    <div class="w-100">
+                        <span>Portafolio</span>
+                        <div class="icono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z" />
+                                <path
+                                    d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z" />
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" title="Acerca de" class="enlaceA px-4 d-flex align-items-center text-center text-white">
+                    <div class="w-100">
+                        <span>Acerca de</span>
+                        <div class="icono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" title="Contacto" class="enlaceC px-4 d-flex align-items-center text-center text-white">
+                    <div class="w-100">
+                        <span>Contacto</span>
+                        <div class="icono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </a>
             </nav>
         </div>
 
@@ -34,8 +70,7 @@
         <div class="row">
             <div class="col">
                 <!-- Carousel-->
-                <div class="carousel slide" id="mi-carousel1" 
-                data-bs-ride="carousel" data-bs-touch="false">
+                <div class="carousel slide" id="mi-carousel1" data-bs-ride="carousel" data-bs-touch="false">
                     <!--1) Contenedor de imágenes -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -50,28 +85,25 @@
                     </div>
 
                     <!--2) Los botones -->
-                    <button class="carousel-control-prev"
-                        type="button"
-                        data-bs-target="#mi-carousel1"
-                        data-bs-slide="prev"
-                    >
+                    <button class="carousel-control-prev" type="button" data-bs-target="#mi-carousel1"
+                        data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Anterior</span>
                     </button>
 
-                    <button class="carousel-control-next"
-                        type="button"
-                        data-bs-target="#mi-carousel1"
-                        data-bs-slide="next"
-                    >
+                    <button class="carousel-control-next" type="button" data-bs-target="#mi-carousel1"
+                        data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Siguiente</span>
                     </button>
                     <!--3) Indicadores -->
                     <div class="carousel-indicators">
-                        <button type="button" class="active" data-bs-target="#mi-carousel1" data-bs-slide-to="0" aria-label="Slide 1"></button>
-                        <button type="button" class="" data-bs-target="#mi-carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" class="" data-bs-target="#mi-carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" class="active" data-bs-target="#mi-carousel1" data-bs-slide-to="0"
+                            aria-label="Slide 1"></button>
+                        <button type="button" class="" data-bs-target="#mi-carousel1" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" class="" data-bs-target="#mi-carousel1" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
                     </div>
                 </div>
             </div>
@@ -79,58 +111,63 @@
 
     </header>
 
-    <!---->
-    <div class="container">
-        <div class="row portafolio mt-5">
-            <div class="col">
-                <h2 class="titulo text-primary text-center">Portafolio</h2>
-                <div class="row galeria gy-4">
-                    <!--Imagen 1-->
-                    <div class="contenedor-img col-6 col-md-4">
-                        <a href="#" title="im1">
-                            <img class="img-fluid" src="../img2/img-1.jpg" alt="im1">
-                        </a>
-                    </div>
-                    <!--Imagen 2-->
-                    <div class="contenedor-img col-12 col-md-8">
-                        <a href="#" title="im2">
-                            <img class="img-fluid" src="../img2/img-2.jpg" alt="im2">
-                        </a>
-                    </div>
-                    <!--Imagen 3-->
-                    <div class="contenedor-img col-12 col-md-8">
-                        <a href="#" title="im3">
-                            <img class="img-fluid" src="../img2/img-3.jpg" alt="im3">
-                        </a>
-                    </div>
-                    <!--Imagen 4-->
-                    <div class="contenedor-img col-6 col-md-4">
-                        <a href="#" title="im4">
-                            <img class="img-fluid" src="../img2/img-4.jpg" alt="im4">
-                        </a>
-                    </div>
-                    <!--Imagen 5-->
-                    <div class="contenedor-img col-6 col-md-4">
-                        <a href="#" title="im5">
-                            <img class="img-fluid" src="../img2/img-5.jpg" alt="im5">
-                        </a>
-                    </div>
-                    <!--Imagen 6-->
-                    <div class="contenedor-img col-6 col-md-4">
-                        <a href="#" title="im6">
-                            <img class="img-fluid" src="../img2/img-6.jpg" alt="im6">
-                        </a>
-                    </div>
-                    <!--Imagen 7-->
-                    <div class="contenedor-img col-12 col-md-4">
-                        <a href="#" title="im7">
-                            <img class="img-fluid" src="../img2/img-7.jpg" alt="im7">
-                        </a>
+    <!--Portafolio -->
+    <main>
+        <div class="container">
+            <div class="row portafolio g-0 mt-5">
+                <div class="col">
+                    <h2 class="titulo text-primary text-center">Portafolio</h2>
+                    <div class="row galeria gy-4">
+                        <!--Imagen 1-->
+                        <div class="contenedor-img col-6 col-md-4">
+                            <a href="#" title="im1">
+                                <img class="img-fluid" src="../img2/img-1.jpg" alt="im1">
+                            </a>
+                        </div>
+                        <!--Imagen 2-->
+                        <div class="contenedor-img col-12 col-md-8">
+                            <a href="#" title="im2">
+                                <img class="img-fluid" src="../img2/img-2.jpg" alt="im2">
+                            </a>
+                        </div>
+                        <!--Imagen 3-->
+                        <div class="contenedor-img col-12 col-md-8">
+                            <a href="#" title="im3">
+                                <img class="img-fluid" src="../img2/img-3.jpg" alt="im3">
+                            </a>
+                        </div>
+                        <!--Imagen 4-->
+                        <div class="contenedor-img col-6 col-md-4">
+                            <a href="#" title="im4">
+                                <img class="img-fluid" src="../img2/img-4.jpg" alt="im4">
+                            </a>
+                        </div>
+                        <!--Imagen 5-->
+                        <div class="contenedor-img col-6 col-md-4">
+                            <a href="#" title="im5">
+                                <img class="img-fluid" src="../img2/img-5.jpg" alt="im5">
+                            </a>
+                        </div>
+                        <!--Imagen 6-->
+                        <div class="contenedor-img col-6 col-md-4">
+                            <a href="#" title="im6">
+                                <img class="img-fluid" src="../img2/img-6.jpg" alt="im6">
+                            </a>
+                        </div>
+                        <!--Imagen 7-->
+                        <div class="contenedor-img col-12 col-md-4">
+                            <a href="#" title="im7">
+                                <img class="img-fluid" src="../img2/img-7.jpg" alt="im7">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <!--footer -->
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

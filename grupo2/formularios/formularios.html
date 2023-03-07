@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-6">
+                <form action="">
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo Electrónico</label>
+                        <input type="text" class="form-control" id="correo" name="correo" 
+                        placeholder="Correo Electrónico" aria-describedby="ayuda-correo">
+                        <div class="form-text" id="ayuda-correo">
+                            Te enviaremos un mensaje de confirmación
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" name="mensaje" id="mensaje" placeholder="Texto del mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Enviar</button>
+                </form>
+            </div>
+            <div class="col-6">
+                <form action="">
+                    <input type="text" class="mb-3 form-control form-control-lg" placeholder="input grande">
+                    <input type="text" class="mb-3 form-control form-control-sm" placeholder="input pequeño">
+                    <input type="text" class="mb-3 form-control" disabled placeholder="input disabled">
+                    <input type="text" class="mb-3 form-control" readonly placeholder="input readonly">
+                    <input type="text" class="mb-3 form-control-plaintext" placeholder="input text plain">
+                    <input type="file" class="mb-3 form-control" placeholder="Seleccionar fichero">
+                </form>
+            </div>
+        </div>
+        <hr class="my-5">
+        <div class="row">
+            <div class="col-3">
+                <select name="pais" id="pais" class="form-select" aria-label="país">
+                    <option value="1">España</option>
+                    <option value="2">Francia</option>
+                    <option value="3">Portugal</option>
+                </select>
+            </div>
+            <div class="col-3">
+                <select name="pais2" id="pais2" class="form-select form-select-lg" aria-label="país">
+                    <option value="1">España</option>
+                    <option value="2">Francia</option>
+                    <option value="3">Portugal</option>
+                </select>
+            </div>
+            <div class="col-3">
+                <select disabled name="pais3" id="pais3" class="form-select form-select-sm" aria-label="país">
+                    <option value="1">España</option>
+                    <option value="2">Francia</option>
+                    <option value="3">Portugal</option>
+                </select>
+            </div>
+            <div class="col-3">
+                <select multiple size="3" name="pais4" id="pais4" class="form-select" aria-label="país">
+                    <option value="1">España</option>
+                    <option value="2">Francia</option>
+                    <option value="3">Portugal</option>
+                    <option value="4">Alemania</option>
+                    <option value="5">Austria</option>
+                </select>
+            </div>
+        </div>
+        <hr class="my-5">
+        <div class="row">
+            <!-- Checkbox -->
+            <div class="col-4">
+                <div class="form-check">
+                    <input type="checkbox" name="checkbox1" id="checkbox1" class="form-check-input">
+                    <label for="checkbox1" class="form-check-label">CheckBox1</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" name="checkbox2" id="checkbox2" class="form-check-input">
+                    <label for="checkbox2" class="form-check-label">CheckBox2</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" name="checkbox3" id="checkbox3" class="form-check-input">
+                    <label for="checkbox3" class="form-check-label">CheckBox3</label>
+                </div>
+            </div>
+            <!-- RadioButtons -->
+            <div class="col-4">
+                <div class="form-check">
+                    <input type="radio" name="grupo" id="radio1" class="form-check-input">
+                    <label for="radio1" class="form-check-label">radio 1</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="grupo" id="radio2" class="form-check-input">
+                    <label for="radio2" class="form-check-label">radio 2</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="grupo" id="radio3" class="form-check-input">
+                    <label for="radio3" class="form-check-label">radio 3</label>
+                </div>
+            </div>
+            <!-- Switch -->
+            <div class="col-4">
+                <div class="form-check form-switch">
+                    <input type="checkbox" name="switch1" id="switch1" class="form-check-input">
+                    <label for="switch1" class="form-check-label">switch1</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input type="checkbox" name="Switch2" id="Switch2" class="form-check-input">
+                    <label for="Switch2" class="form-check-label">Switch2</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input type="checkbox" name="switch3" id="switch3" class="form-check-input">
+                    <label for="switch3" class="form-check-label">switch3</label>
+                </div>
+            </div>
+        </div>
+        <hr class="my-5">
+        <div class="row">
+            <!-- Checkbox inline: en la misma fila -->
+            <div class="col-6">
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" name="checkboxInline1" id="checkboxInline1" class="form-check-input">
+                    <label for="checkboxInline1" class="form-check-label">CheckBoxInline1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" name="checkboxInline2" id="checkboxInline2" class="form-check-input">
+                    <label for="checkboxInline2" class="form-check-label">CheckBoxInline2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" name="checkboxInline3" id="checkboxInline3" class="form-check-input">
+                    <label for="checkboxInline3" class="form-check-label">CheckBoxInline3</label>
+                </div>
+            </div>
+            <!-- RadioButtons inline en la misma fila -->
+            <div class="col-6">
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="grupo2" id="radio21" class="form-check-input">
+                    <label for="radio21" class="form-check-label">radio 1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="grupo2" id="radio22" class="form-check-input">
+                    <label for="radio22" class="form-check-label">radio 2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="grupo2" id="radio23" class="form-check-input">
+                    <label for="radio23" class="form-check-label">radio 3</label>
+                </div>
+            </div>
+        </div>
+        <hr class="my-5">
+        <div class="row">
+            <div class="col-6">
+                <!-- Checkbox como botones -->
+                <input type="checkbox" name="checkboxb1" id="checkboxb1" class="btn-check">
+                <label for="checkboxb1" class="btn btn-outline-secondary">CheckBox</label>
+
+                <input type="checkbox" name="checkboxb2" id="checkboxb2" class="btn-check">
+                <label for="checkboxb2" class="btn btn-outline-secondary">CheckBox</label>
+
+                <input type="checkbox" name="checkboxb3" id="checkboxb3" class="btn-check">
+                <label for="checkboxb3" class="btn btn-outline-secondary">CheckBox</label>
+            </div>
+            <div class="col-6">
+                <!-- RadioButtons como botones -->
+                <input type="radio" name="grupob" id="grupob1" class="btn-check">
+                <label for="grupob1" class="btn btn-outline-secondary">boton</label>
+
+                <input type="radio" name="grupob" id="grupob2" class="btn-check">
+                <label for="grupob2" class="btn btn-outline-secondary">boton</label>
+
+                <input type="radio" name="grupob" id="grupob3" class="btn-check">
+                <label for="grupob3" class="btn btn-outline-secondary">boton</label>
+            </div>
+        </div>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

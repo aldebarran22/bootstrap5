@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-6">
+                <form action="">
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Rangos -->
+                            <label for="rango" class="form-label">Presupuesto</label>
+                            <input type="range" class="form-range" id="rango" name="rango" min="0" max="1000" step="10">
+                            <div class="d-flex justify-content-between">
+                                <p class="form-text">0&euro;</p>
+                                <p class="form-text">1000&euro;</p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <!--Input group -->
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="correo" aria-label="correo">
+                                <span class="input-group-text">@gmail.com</span>                                
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <!--Input group -->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">EMAIL:</span>
+                                <input type="text" class="form-control" placeholder="correo" aria-label="correo">
+                                <span class="input-group-text">@gmail.com</span>                                
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <!--Input group -->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">EMAIL:</span>
+                                <input type="text" class="form-control" placeholder="correo" aria-label="correo">
+                                <span class="input-group-text">@gmail.com</span>  
+                                <button type="button" class="btn btn-primary" >Verificar</button>                              
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <!--Input group -->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Nombre:</span>
+                                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">                                                            
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">EMAIL:</span>
+                                <input type="text" class="form-control" placeholder="correo" aria-label="correo">
+                                <select name="" id="" class="form-select" placeholder="dominio" aria-label="dominio">
+                                    <option value="@gmail.com">@gmail.com</option>
+                                    <option value="@gmail.es">@gmail.es</option>
+                                    <option value="@hotmail.com">@hotmail.com</option>
+                                </select>                                
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="boton">Enviar</button>
+                </form>
+            </div>          
+        </div>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.onload = () => {
+            let boton = document.getElementById('boton')
+            let rg = document.getElementById('rango')
+
+            boton.onclick = () => {
+                alert(rg.value);
+            }
+
+            rg.onchange = () => {
+                //alert('salta evento change');
+            }
+        }
+    </script>
+</body>
+
+</html>
