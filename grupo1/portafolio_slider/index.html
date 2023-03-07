@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla Bootstrap</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos_media.css">
+</head>
+
+<body>
+    <!-- Cabecera: título, enlaces y slider -->
+    <header class="container">
+
+        <!--La fila de la cabecera: titulo y enlaces: -->
+        <div class="nav row g-0 mt-3 justify-content-between rounded-top">
+
+            <!-- Titulos -->
+            <div class="col-12 col-lg-auto logo d-flex align-items-center ps-4">
+                <h2 class="titulo">PORTAFOLIO</h2>
+                <p class="my-0 ms-3">Curso de Bootstrap 5</p>
+            </div>
+
+            <!--Enlaces -->
+            <nav class="menu col-12 col-lg-auto d-flex">
+                <a href="#" title="portafolio" class="enc_porta px-4 d-flex align-items-center text-center text-white">
+                    <div class="w-100">
+                        <span>Portafolio</span>
+                        <div class="icono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z" />
+                                <path
+                                    d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z" />
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" title="acerca de" class="enc_acerca px-4 d-flex align-items-center text-center text-white">
+                    <div class="w-100">
+                        <span>Acerca de</span>
+                        <div class="icono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" title="contacto" class="enc_contacto px-4 d-flex align-items-center text-center text-white">
+                    <div class="w-100">
+                        <span>Contacto</span>
+                        <div class="contacto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            </nav>
+        </div>
+
+        <!-- Slider -->
+        <div class="row">
+            <div class="col-12">
+                <div class="carousel slide" id="mi-carousel" data-bs-ride="carousel" data-bs-touch="false">
+                    <!--Las imágenes-->
+                    <div class="carousel-inner">
+                        <!-- Cada imagen se coloca en un item-->
+                        <div class="carousel-item active">
+                            <img src="../img2/slide1.jpg" alt="" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img2/slide2.jpg" alt="" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img2/slide3.jpg" alt="" class="d-block w-100">
+                        </div>
+                    </div>
+
+                    <!--Control anterior y siguiente -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#mi-carousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#mi-carousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+
+                    <!-- Indicadores de las imágenes
+                    data-bs-slide-to indicamos a que slide tiene que ir (empiezan en 0)
+                    Siempre marcar el button activo!
+                    -->
+                    <div class="carousel-indicators">
+                        <button type="button" class="active" data-bs-target="#mi-carousel" data-bs-slide-to="0"
+                            aria-label="slide 1"></button>
+                        <button type="button" class="" data-bs-target="#mi-carousel" data-bs-slide-to="1"
+                            aria-label="slide 2"></button>
+                        <button type="button" class="" data-bs-target="#mi-carousel" data-bs-slide-to="2"
+                            aria-label="slide 3"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección principal con el portafolio: galería de fotos -->
+    <main>
+        <div class="container">
+            <div class="portafolio g-0 row mt-5">
+                <div class="col">
+                    <h2 class="text-center titulo">Portafolio</h2>
+                    <div class="row galeria">
+                        <!--Imagen 1-->
+                        <div class="contenedor-img mb-4 col-6 col-md-4">
+                            <a href="#" title="img1">
+                                <img class="img-fluid" src="../img2/img-1.jpg" alt="img1">
+                            </a>
+                        </div>
+                        <!--Imagen 2-->
+                        <div class="contenedor-img mb-4 col-12 col-md-8">
+                            <a href="#" title="img2">
+                                <img class="img-fluid" src="../img2/img-2.jpg" alt="img2">
+                            </a>
+                        </div>
+                        <!--Imagen 3-->
+                        <div class="contenedor-img mb-4 col-12 col-md-8">
+                            <a href="#" title="img3">
+                                <img class="img-fluid" src="../img2/img-3.jpg" alt="img3">
+                            </a>
+                        </div>
+                        <!--Imagen 4-->
+                        <div class="contenedor-img mb-4 col-6 col-md-4">
+                            <a href="#" title="img4">
+                                <img class="img-fluid" src="../img2/img-4.jpg" alt="img4">
+                            </a>
+                        </div>
+                        <!--Imagen 5-->
+                        <div class="contenedor-img mb-4 col-6 col-md-4">
+                            <a href="#" title="img5">
+                                <img class="img-fluid" src="../img2/img-5.jpg" alt="img5">
+                            </a>
+                        </div>
+                        <!--Imagen 6-->
+                        <div class="contenedor-img mb-4 col-6 col-md-4">
+                            <a href="#" title="img6">
+                                <img class="img-fluid" src="../img2/img-6.jpg" alt="img6">
+                            </a>
+                        </div>
+                        <!--Imagen 7-->
+                        <div class="contenedor-img mb-4 col-12 col-md-4">
+                            <a href="#" title="img7">
+                                <img class="img-fluid" src="../img2/img-7.jpg" alt="img7">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
