@@ -20,6 +20,7 @@
                     <p class="form-text">0&euro;</p>
                     <p class="form-text">1000&euro;</p>
                 </div>
+                <button id="boton" type="button" class="btn btn-primary mt-5">Enviar</button>
             </div>
             <div class="col-6">
 
@@ -27,5 +28,27 @@
         </div>
     </div>
     <script src="../js/bootstrap.bundle.min.js"></script>   
+    <script>
+        /*
+        Otras formas de registrar eventos:
+        function evento(){}
+        window.onload=evento;
+
+        window.onload = function(){
+        }*/
+
+        window.onload=()=>{
+            let boton = document.getElementById('boton')
+            let rango = document.getElementById('rango')
+
+            boton.onclick = ()=>{
+                alert('Valor actual:'+rango.value)
+            }
+
+            rango.onchange = ()=> {
+                console.log('Rango: '+rango.value)
+            }
+        }
+    </script>
 </body>
 </html>

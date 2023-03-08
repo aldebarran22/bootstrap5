@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">   
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-6">
+                <!-- Inputgroup -->            
+                <div class="input-group">
+                    <input type="email" class="form-control" 
+                    placeholder="nombre de usuario" aria-label="nombre de usuario">
+                    <span class="input-group-text">@gmail.com</span>
+                </div>
+            </div>
+            <div class="col-6">
+                <!-- Inputgroup -->            
+                <div class="input-group">
+                    <span class="input-group-text">Nombre completo</span>
+                    <input type="text" class="form-control" 
+                    placeholder="nombre" aria-label="nombre">
+                    <input type="text" class="form-control" 
+                    placeholder="apellidos" aria-label="apellidos">
+                    <button type="submit" class="btn btn-primary ">Enviar</button>
+                </div>
+            </div>
+            <div class="col-6 my-5">
+                <div class="input-group">
+                    <span class="input-group-text">Correo</span>
+                    <input type="text" class="form-control" 
+                    placeholder="nombre" aria-label="nombre">
+                    <span class="input-group-text">@</span>
+                    <select name="dominio" id="dominio" class="form-select" aria-label="dominio">
+                        <option value="1">gmail.com</option>
+                        <option value="2">hotmail.com</option>
+                        <option value="3">gmail.es</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary ">Enviar</button>
+                </div>
+            </div>
+            <!-- Etiquetas flotantes -->
+            <div class="col-6 my-5">
+                <div class="form-floating">
+                    <input type="text" id="nombre" name="nombre" class="form-control">
+                    <label for="nombre">Tu nombre</label>
+                </div>
+            </div>
+            <div class="col-6 my-5">
+                <div class="form-floating">
+                    <select name="dominio" id="dominio2" class="form-select" aria-label="dominio">
+                        <option value="1">gmail.com</option>
+                        <option value="2">hotmail.com</option>
+                        <option value="3">gmail.es</option>
+                    </select>
+                    <label for="dominio2">Seleccionar dominio</label>
+                </div>
+            </div>
+            <div class="col-6 my-5">
+                <div class="form-floating">
+                    <textarea name="mensaje" id="mensaje" placeholder="mensaje" class="form-control"></textarea>
+                    <label for="mensaje" class="form-label">Escriba el mensaje</label>
+                </div>
+            </div>
+            <div class="col-6">
+                <form action="">
+                    <label for="correo">Correo</label>
+                    <input type="text" class="form-control is-valid" 
+                    id="correo" name="correo" placeholder="correo">
+                    <div class="valid-feedback">Correcto!</div>
+                </form>
+            </div>
+            <div class="col-6">
+                <form action="">
+                    <label for="correo2">Correo2</label>
+                    <input type="text" class="form-control is-invalid" 
+                    id="correo2" name="correo2" placeholder="correo2">
+                    <div class="invalid-feedback d-none">Incorrecto!</div>
+                </form>
+            </div>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>   
+</body>
+</html>
