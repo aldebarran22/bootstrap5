@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas Flotantes y Validación</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-4">
+                <!-- La etiqueta flotante se puede poner a los controles: 
+                input text, textarea y al select -->
+                <div class="form-floating">
+                    <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre">
+                    <label for="nombre" class="text-info">Escriba su nombre</label>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="form-floating">
+                    <textarea name="notas" id="notas" class="form-control" placeholder="notas"></textarea>
+                    <label for="notas">Notas</label>
+                </div>            
+            </div>
+            <div class="col-4">
+                <div class="form-floating">
+                    <select name="pais" id="pais" class="form-select">
+                        <option value="1">ESP</option>
+                        <option value="2">POR</option>
+                        <option value="3">FR</option>
+                    </select>
+                    <label for="pais">País</label>
+                </div>
+            </div>
+            <div class="col-4">
+                <input type="text" id="nombre2" name="nombre2" class="form-control" placeholder="escribe el nombre"  aria-label="nombre2">
+            </div>
+            <div class="col-4">
+                <label for="login">Login</label>
+                <input type="text" id="login" name="login" class="form-control is-valid" placeholder="nombre">
+                <div class="valid-feedback">Login correcto!</div>
+            </div>
+            <div class="col-4">
+                <label for="pass">Password</label>
+                <input type="password" id="pass" name="pass" class="form-control is-invalid" placeholder="password">
+                <div class="invalid-feedback">Password incorrecto!</div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

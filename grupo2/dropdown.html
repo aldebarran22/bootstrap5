@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-3">
+                <!-- Menú desplegable hacia abajo -->
+                <div class="dropdown">
+                    <!-- Un botón-->
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdown1"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-label="boton">Menú desplegable</button>
+
+                    <!-- Las opciones del menú -->
+                    <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                        <li><a href="#" class="dropdown-item">Elemento #1</a></li>
+                        <li><a href="#" class="dropdown-item">Elemento #2</a></li>
+                        <li><a href="#" class="dropdown-item">Elemento #3</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3">
+                <!-- Menú desplegable hacia abajo -->
+                <div class="dropdown">
+                    <!-- Un enlace-->
+                    <a href="#" class="btn btn-dark dropdown-toggle" type="button" id="dropdown2"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-label="boton">Menú desplegable con
+                        enlace</a>
+
+                    <!-- Las opciones del menú -->
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdown2">
+                        <li><a href="#" class="dropdown-item">Elemento #1</a></li>
+                        <li><a href="#" class="dropdown-item">Elemento #2</a></li>
+                        <li><a href="#" class="dropdown-item">Elemento #3</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3">
+                <!-- Separar el botón de la parte de la flecha -->
+                <div class="dropdown">
+                    <div class="btn-group gap-2">
+                        <button class="btn btn-success">Botón</button>
+                        <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" type="button"
+                            id="dropdown3" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Mostrar / Ocultar menú</span>
+                        </button>
+                        <!-- Las opciones del menú -->
+                        <ul class="dropdown-menu" aria-labelledby="dropdown3">
+                            <li><a href="#" class="dropdown-item">Elemento #1</a></li>
+                            <li><a href="#" class="dropdown-item">Elemento #2</a></li>
+                            <li><a href="#" class="dropdown-item">Elemento #3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <!-- Menú desplegable hacia abajo Grande: btn-lg / Pequeño: btn-sm -->
+                <div class="dropdown">
+                    <!-- Un botón-->
+                    <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="dropdown1"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-label="boton">Menú desplegable</button>
+
+                    <!-- Las opciones del menú -->
+                    <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                        <li><a href="#" class="dropdown-item">Elemento #1</a></li>
+                        <li><a href="#" class="dropdown-item">Elemento #2</a></li>
+                        <li><a href="#" class="dropdown-item">Elemento #3</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3">
+                <!-- Menú desplegable en otras direcciones:
+                dropup: arriba, dropstart: izq, dropend:derecha -->
+                <div class="dropend">
+                    <!-- Un botón-->
+                    <button class="btn btn-primary  dropdown-toggle" type="button" id="dropend1"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-label="boton">Dropend</button>
+
+                    <!-- Las opciones del menú -->
+                    <ul class="dropdown-menu" aria-labelledby="dropend1">
+                        <li><a href="#" class="dropdown-item">Elemento #1</a></li>
+                        <li><a href="#" class="dropdown-item">Elemento #2</a></li>
+                        <li><a href="#" class="dropdown-item">Elemento #3</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="dropend">
+                    <!-- Un botón-->
+                    <button class="btn btn-primary  dropdown-toggle" type="button" id="dropend2"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-label="boton">Menú</button>
+                    <!-- Las opciones del menú -->
+                    <ul class="dropdown-menu" aria-labelledby="dropend2">
+                        <li>
+                            <h5 class="dropdown-header">Opciones</h5>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Nuevo</a></li>
+                        <li><a href="#" class="dropdown-item">Abrir</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a href="#" class="dropdown-item">Copiar</a></li>
+                        <li><a href="#" class="dropdown-item">Cortar</a></li>
+                        <li><a href="#" class="dropdown-item">Pegar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="dropend">
+                    <!-- Un botón-->
+                    <button class="btn btn-primary  dropdown-toggle" type="button" id="dropend2"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-label="boton">Menú</button>
+                    <!-- Las opciones del menú -->
+                    <ul class="dropdown-menu" aria-labelledby="dropend2">
+                        <li>
+                            <h5 class="dropdown-header">Opciones</h5>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Nuevo</a></li>
+                        <li><a href="#" class="dropdown-item">Abrir</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>Anidado
+                            <!-- Dropdown anidado -->
+                            <div class="dropend">
+                                <ul class="dropdown-menu" aria-labelledby="dropend3">
+                                    <li><a href="#" class="dropdown-item">anidado1</a></li>
+                                    <li><a href="#" class="dropdown-item">anidado2</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a href="#" class="dropdown-item">Copiar</a></li>
+                        <li><a href="#" class="dropdown-item">Cortar</a></li>
+                        <li><a href="#" class="dropdown-item">Pegar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="my-5">
+        <div class="row">
+            <div class="col">
+            </div>
+        </div>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script>
+            window.onload = () => {
+                $("#dropdown1").click()
+            }
+        </script>
+</body>
+
+</html>

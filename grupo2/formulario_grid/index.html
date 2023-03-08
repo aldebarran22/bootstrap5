@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,75 @@
     <title>Práctica Formularios</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
+
 <body>
     <div class="container">
-        <div class="row">
+        <div class="row mt-5">
             <div class="col">
                 <form action="">
                     <!-- Dentro de form se aplica un grid de rows / cols-->
-                    <!-- Fila nombre y correo-->
+                    <!-- 1) Fila nombre y correo-->
                     <div class="row">
                         <!--Nombre -->
-                        <div class="col">
-                            
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="nombre">
                         </div>
                         <!--Correo -->
-                        <div class="col">
-
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="correo" class="form-label">Correo</label>
+                            <input type="email" class="form-control" id="correo" name="correo" placeholder="correo">
                         </div>
                     </div>
-                    <!-- mensaje, estado civil y país -->
+                    <!--2) mensaje, estado civil y país -->
                     <div class="row">
-                        
+                        <!-- Mensaje-->
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" class="form-control" placeholder="mensaje"></textarea>
+                        </div>
+
+                        <!--Estado civil y el país -->
+                        <div class="col-12 col-md-6 mb-3">
+                            <div class="row">
+                                <!-- Estado civil-->
+                                <div class="col-12 col-sm-6 mb-3">
+                                    <label class="form-label">Estado Civil</label>
+                                    <div class="form-check">
+                                        <input type="radio" id="soltero" name="estado_civil" class="form-check-input">
+                                        <label for="soltero" class="form-check-label">Soltero</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" id="casado" name="estado_civil" class="form-check-input">
+                                        <label for="casado" class="form-check-label">Casado</label>
+                                    </div>
+                                </div>
+                                <!--El país -->
+                                <div class="col-12 col-sm-6 mb-3">
+                                    <label for="pais" class="form-label">País</label>
+                                    <select name="pais" id="pais" class="form-select" aria-label="pais">
+                                        <option selected value="0">Selecciona el país</option>
+                                        <option value="1">España</option>
+                                        <option value="2">Portugal</option>
+                                        <option value="3">Francia</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--3) Botón de enviar y el checkbox -->
+                    <div class="row">
+                        <div class="col d-flex justify-content-center">
+                            <div>
+                                <!-- Etiqueta block lo que venga después se pinta en la fila de abajo-->
+                                <div class="form-check">
+                                    <input type="checkbox" id="terminos" name="terminos" class="form-check-input">
+                                    <label for="terminos" class="form-check-label">Acepto los términos y
+                                        condiciones</label>
+                                </div>  <!-- col-12: para expandir al mismo tamaño que el checkbox-->
+                                <button type="submit" class="col-12 btn btn-primary mt-3">Enviar</button>
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -34,4 +84,5 @@
     </div>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
