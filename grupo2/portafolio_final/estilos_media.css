@@ -1,0 +1,72 @@
+:root {
+    --color_fondo: #f2f2f2;
+}
+
+
+body {
+    background: var(--color_fondo);
+    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ESTILOS DE LA CABECERA: LOGO, BOTONES Y SLIDER */
+header .nav {
+    min-height: 80px;
+    background: #fff;
+    overflow: hidden;
+}
+
+header .menu .enlaceP {background:#3da5e2;}
+header .menu .enlaceA {background: #005385;}
+header .menu .enlaceC {background: #003855;}
+
+header .menu .enlace:HOVER {background:#1BA0EF;}
+header .menu .enlaceA:HOVER {background: #00426A;}
+header .menu .enlaceC:HOVER {background: #002D44;}
+
+/* ESTILOS GALERIA DE IMAGENES */
+.portafolio {
+    border-top: 5px solid #3da5e2; 
+}
+
+.titulo {
+    padding: 30px 0;
+}
+
+.contenedor-img {
+    /* Limitar el alto de la imagen y si sobra lo cortamos*/
+    max-height: 180px;
+    overflow: hidden;
+}
+
+.contenedor-img a {
+    background: #3da5e2;  
+    display: inline-block;  
+}
+
+.contenedor-img a:HOVER img {
+    opacity: .4;
+}
+
+/* ESTILOS DE LA ventana modal */
+.modal-dialog {
+    max-width: 1000px;
+}
+
+/* ESTILOS DEL FOOTER */
+
+
+/* Mediano */
+@media screen and (max-width:992px){
+    .galeria .contenedor-img:nth-child(1){order:1;}
+    .galeria .contenedor-img:nth-child(2){order:3;}
+    .galeria .contenedor-img:nth-child(3){order:4;}
+    .galeria .contenedor-img:nth-child(4){order:2;}
+    .galeria .contenedor-img:nth-child(5){order:5;}
+    .galeria .contenedor-img:nth-child(6){order:6;}
+    .galeria .contenedor-img:nth-child(7){order:7;}
+}
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventanas Modales</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .modal-body {
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- 
+                    data-bs-target donde se abre la ventana 
+                    data-bs-toggle el tipo de componente que tiene que mostrar
+                -->
+                <button class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modal1"
+                >Abrir Modal 1</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modal2"
+                >Abrir Modal 2</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modal3"
+                >Abrir Modal 3</button>
+            </div>
+        </div>
+    </div>
+    <!--Ventanas modales: -->
+    <!-- Ventana normal: con un mensaje sin efecto modal -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true" aria-labelledby="label-modal1">
+
+        <!-- Caja del dialogo-->
+        <div class="modal-dialog">
+
+            <!-- El contenido de la ventana -->
+            <div class="modal-content">
+
+                <!-- header -->
+
+                <!-- Body -->
+                <div class="modal-body">
+                    <h1>Hola mundo</h1>
+                </div>
+
+                <!-- Footer -->
+            </div>
+        </div>
+    </div>
+
+    <!--Ventana con encabezado, botones, botón de cerrar -->
+    <!-- Para que no permita pulsar fuera de la ventana: data-bs-backdrop=static-->
+    <div class="modal fade" id="modal2" tabindex="-1" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="label-modal2">
+
+        <!-- Caja del dialogo-->
+        <!-- Para centrar width / height class=modal-dialog-centered-->
+        <div class="modal-dialog modal-dialog-centered">
+
+            <!-- El contenido de la ventana -->
+            <div class="modal-content">
+
+                <!-- header -->
+                <div class="modal-header">
+                    <h5 class="modal-title">Título de la ventana</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="cerrar"></button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                    <h1>Hola mundo</h1>
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Ventana modal scrollable para mostrar un contenido grande de texto -->
+    <div class="modal fade" id="modal3" tabindex="-1" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="label-modal3">
+
+        <!-- Caja del dialogo-->
+        <!-- Para centrar width / height class=modal-dialog-centered-->
+        <!-- Se puede mostrar un scroll -->
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+
+            <!-- El contenido de la ventana -->
+            <div class="modal-content">
+
+                <!-- header -->
+                <div class="modal-header bg-success">
+                    <h5 class="modal-title">Título de la ventana</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="cerrar"></button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ad nemo dolor odio, aut iste recusandae consequatur possimus minus illo, exercitationem eos ducimus ipsum quidem, quasi sint laboriosam! Suscipit explicabo nesciunt placeat quibusdam, laboriosam assumenda rerum maxime quis mollitia numquam, porro ratione consequatur laudantium temporibus odio commodi nam, dolor fugiat. A doloribus aspernatur dolorum deleniti placeat at autem, quo odio nostrum rem sunt earum, aut excepturi accusantium. Accusamus voluptatum, reprehenderit modi quae debitis adipisci obcaecati minus neque quia assumenda odio, et placeat explicabo? Maiores eaque saepe dolor distinctio soluta beatae, laborum atque, dolore, nostrum dolores quibusdam blanditiis voluptatum at labore praesentium id voluptatem fugiat neque. Vel neque dolores, ab consequatur sed at dicta sit iusto in aliquam voluptatum beatae praesentium quisquam molestias natus quasi maiores necessitatibus asperiores illo. Quod laboriosam assumenda commodi nobis! Doloremque magni odit officia mollitia quae fugiat tenetur eaque enim possimus rerum velit voluptas quos molestiae adipisci laboriosam perspiciatis earum id ex facilis saepe, recusandae consectetur itaque labore? Est quam ducimus, nostrum consectetur animi officiis amet eius, facere, tenetur excepturi laborum? Veritatis et quo dolore cum deleniti. Aliquam velit excepturi aspernatur laborum omnis itaque soluta, temporibus vel, quo illum ex earum aperiam minima incidunt explicabo, officiis qui autem id sapiente. Nemo culpa minima molestias. Mollitia sed perspiciatis, voluptates sit reiciendis qui. Doloremque, minus corrupti perspiciatis ratione libero laboriosam dolore impedit perferendis repellendus laborum sapiente tenetur obcaecati ea molestias? Est labore cupiditate fugiat? Corrupti ex, rem eaque quaerat aliquam sapiente. Inventore possimus cumque odit distinctio in quae, rerum voluptates explicabo necessitatibus eius asperiores sint consequatur aperiam qui numquam cupiditate quia quaerat libero obcaecati, eveniet quo aliquam temporibus, culpa aspernatur. Odit molestiae tempora amet voluptate magni culpa dignissimos sint. Quidem ratione beatae est, aspernatur error animi assumenda sint sapiente voluptatibus perferendis facere odit voluptatem vitae, quos enim nesciunt. Explicabo, provident? Ipsa qui quasi optio nobis sint, molestias eaque reiciendis repellendus consequuntur nesciunt consequatur dolorum praesentium provident fuga natus repellat laboriosam magnam? Necessitatibus expedita totam, accusamus, architecto illum laudantium minima mollitia laboriosam ratione iure quia, id ut ad inventore autem voluptas quis? Aliquid, tenetur sequi doloremque exercitationem fuga eaque magni laudantium recusandae cumque assumenda atque maiores! Ratione nemo saepe repellat ullam minima, et, dolores, quaerat pariatur ut voluptates officia similique atque earum minus? Hic molestias consequatur animi, voluptatibus sunt quis necessitatibus fugiat numquam commodi corrupti excepturi molestiae cumque, reprehenderit deleniti ipsum eveniet voluptatem sequi eaque quae debitis facilis quos. Enim architecto atque fugiat fuga, natus, eveniet corporis explicabo eos illum ea ad dolorum! Dolore pariatur officiis provident asperiores expedita dolor nostrum officia, impedit, molestias assumenda laboriosam eum accusamus illum, sed sapiente. Magnam rerum quisquam deleniti laboriosam iusto totam cupiditate iure! Soluta consequuntur, enim cum quibusdam necessitatibus maxime repellendus consectetur aliquam velit provident rem. Modi voluptates iusto, labore architecto rerum eligendi velit nulla non distinctio aliquid adipisci saepe, quam obcaecati officia impedit dolores in odit, sint reprehenderit natus fugit quia facere! Minima hic eum illum ullam dicta maiores, sint veniam ad consequuntur nobis, ea, earum aspernatur reprehenderit corrupti blanditiis explicabo vero.</p>
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

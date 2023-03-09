@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barras de navegación</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-4">
+                <!-- Tipo de las pestañas: nav-tabs / nav-pills / nav-fill -->
+                <ul class="nav">
+                    <li class="nav-item"><a href="#" class="nav-link active">Opción 1</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Opción 2</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link disabled">Opción 3</a></li>
+                </ul>                
+            </div>
+            <div class="col-4">
+                <!-- Tipo de las pestañas: nav-tabs / nav-pills / nav-fill -->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a href="#" class="nav-link active">Opción 1</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Opción 2</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Opción 3</a></li>
+                </ul>                
+            </div>
+            <div class="col-4">
+                <!-- Tipo de las pestañas: nav-tabs / nav-pills / nav-fill -->
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#" class="nav-link active">Opción 1</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Opción 2</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Opción 3</a></li>
+                </ul>                
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-4">
+                <!-- nav + dropdown -->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a href="#" class="nav-link active">Opción 1</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#"
+                        class="nav-link dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        role="button"
+                        aria-expanded="false"
+                        >Submenú 1
+                        </a>
+                        <!--Las opciones del dropdown -->
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Elemento 1</a></li>
+                            <li><a href="#" class="dropdown-item">Elemento 2</a></li>
+                            <li><a href="#" class="dropdown-item">Elemento 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Opción 2</a></li>                   
+                </ul>                
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
