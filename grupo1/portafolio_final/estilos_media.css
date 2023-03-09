@@ -1,0 +1,69 @@
+body {
+    background: #f2f2f2;
+    font-family: Tahoma, Verdana, Geneva, sans-serif
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER: TITULO, ENLACES Y CAROUSEL */
+
+header .nav {
+    min-height: 80px;
+    background: #fff;
+    overflow: hidden;
+}
+
+header .menu .enc_porta { background: #3da5e2;}
+header .menu .enc_acerca { background: #005385; }
+header .menu .enc_contacto { background: #003855; }
+
+header .menu .enc_porta:HOVER { background: #1ba0ef;}
+header .menu .enc_acerca:HOVER { background: #00426a; }
+header .menu .enc_contacto:HOVER { background: #002d44; }
+
+/* SECCION DEL PORTAFOLIO*/
+
+.portafolio {
+    border-top: 5px solid #3da5e2;
+}
+
+.titulo {
+    color: #3da5e2;
+    padding: 30px 0; 
+}
+
+.contenedor-img {
+    /* Limitamos el alto de la imagen y si sobra se corta */
+    max-height: 180px;
+    overflow: hidden;
+}
+
+.contenedor-img a {
+    background:#3da5e2;
+    /* El enlace ocupa toda la imagen */
+    display: inline-block;
+}
+
+.contenedor-img a:HOVER img {
+    opacity: .3;
+}
+
+/* Estilos ventana modal */
+.modal-dialog {
+    max-width: 1000px; /*Para mostrar las imágenes más grandes */
+}
+
+/* Estilos del footer */
+
+/* Se corresponde con el tamaño md de bootstrap Tableta */
+@media screen and (max-width: 768px){
+    .galeria .contenedor-img:nth-child(1){ order: 1; }
+    .galeria .contenedor-img:nth-child(2){ order: 3; }
+    .galeria .contenedor-img:nth-child(3){ order: 4; }
+    .galeria .contenedor-img:nth-child(4){ order: 2; }
+    .galeria .contenedor-img:nth-child(5){ order: 5; }
+    .galeria .contenedor-img:nth-child(6){ order: 6; }
+    .galeria .contenedor-img:nth-child(7){ order: 7; }
+}

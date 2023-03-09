@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventana modal</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <style>
+        .contenido {
+            height: 250px;
+        }
+    </style>  
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+                <!-- Un botón para abrir la ventana modal -->         
+                <!-- data-bs-target donde se abre la ventana -->
+                <!-- data-bs-toggle es la funcionalidad : JS -->
+                <button type="button" class="btn btn-primary"
+                data-bs-target="#ventana1" 
+                data-bs-toggle="modal"
+                >Abrir</button>
+
+                <!--La ventana modal -->
+                <!-- Para que no permita pinchar fuera del modal: data-bs-backdrop=static-->
+                <div class="modal fade" data-bs-backdrop="static" id="ventana1" tabindex="-1" 
+                aria-hidden="true" aria-labelledby="label-modal-1">
+
+                    <!-- Caja del dialogo -->
+                    <!-- Para centrar class: modal-dialog-centered -->
+                    <div class="modal-dialog modal-dialog-centered">
+
+                        <!-- El contenido de la ventana -->
+                        <div class="modal-content">
+
+                            <!-- Header de la ventana -->
+                            <div class="modal-header">
+                                <h5 class="modal-title">Título de la ventana</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="cerrar"></button>
+                            </div>
+
+                            <!-- Contenido de la ventana -->
+                            <div class="modal-body">
+                                <h2>Hola mundo</h2>
+                            </div>
+
+                            <!-- Footer de la ventana -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col">
+                <!-- Un botón para abrir la ventana modal -->         
+                <!-- data-bs-target donde se abre la ventana -->
+                <!-- data-bs-toggle es la funcionalidad : JS -->
+                <button type="button" class="btn btn-primary"
+                data-bs-target="#ventana2" 
+                data-bs-toggle="modal"
+                >Libro</button>
+
+                <!--La ventana modal -->
+                <!-- Para que no permita pinchar fuera del modal: data-bs-backdrop=static-->
+                <div class="modal fade" data-bs-backdrop="static" id="ventana2" tabindex="-1" 
+                aria-hidden="true" aria-labelledby="label-modal-2">
+
+                    <!-- Caja del dialogo -->
+                    <!-- Para centrar class: modal-dialog-centered -->
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+
+                        <!-- El contenido de la ventana -->
+                        <div class="modal-content">
+
+                            <!-- Header de la ventana -->
+                            <div class="modal-header bg-success-subtle">
+                                <h5 class="modal-title">Título de la ventana</h5>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="cerrar"></button>
+                            </div>
+
+                            <!-- Contenido de la ventana -->
+                            <div class="modal-body contenido">
+                                <h2>Mi libro</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, unde iusto aut quod vel quos ad alias obcaecati optio id rem quas quis reiciendis architecto dolor qui nulla quibusdam ducimus!</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure sint assumenda dignissimos eaque culpa sapiente animi, temporibus dolorum atque earum tempora facere delectus nemo iste repellendus quidem labore ab pariatur?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, natus iste? Dolore quidem doloribus optio asperiores autem repellat ut at vitae. Animi, neque aliquid illo hic corrupti quasi sunt qui beatae autem praesentium distinctio nisi ipsum. Facilis veritatis deleniti itaque quasi autem quisquam distinctio totam quibusdam tenetur, quidem saepe modi velit nihil nobis officia aliquam, accusantium quis debitis dignissimos et! Eaque dicta accusamus quam consequuntur! Provident alias officia incidunt enim ad ipsam labore, earum commodi eum suscipit facilis minus consequuntur corporis iure aliquid unde veniam! Iure ullam magni iusto, quae blanditiis vero obcaecati, optio dignissimos nam hic, excepturi illo quidem!</p>
+                            </div>
+
+                            <!-- Footer de la ventana -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>   
+</body>
+</html>

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DropDown</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">   
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
+
 <body>
     <div class="container">
         <div class="row">
@@ -14,12 +16,12 @@
                 <!-- Menú desplegable-->
                 <div class="dropdown">
                     <!--Boton o enlace -->
-                    <button type="button"
-                    class="btn btn-primary dropdown-toggle"
-                    id="dropdown-1"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    aria-label="boton">
+                    <!-- 
+                        Clases: btn-sm: tamaño pequeño 
+                        btn-lg: tamaño grande
+                    -->
+                    <button type="button" class="btn btn-primary btn-sm dropdown-toggle" id="dropdown-1"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-label="boton">
                         Menú desplegable
                     </button>
                     <!--Las opciones del menú -->
@@ -30,8 +32,76 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="col">
+                <!-- Menú desplegable con enlace y otros colores -->
+                <div class="dropdown">
+                    <!--Boton o enlace -->
+                    <a href="#" type="button" class="btn btn-dark dropdown-toggle" id="dropdown-2"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-label="boton">
+                        Menú con enlace
+                    </a>
+                    <!--Las opciones del menú -->
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdown-2">
+                        <li><a href="#" class="dropdown-item">Elemento #1</a></li>
+                        <li><a href="#" class="dropdown-item">Elemento #2</a></li>
+                        <li><a href="#" class="dropdown-item">Elemento #3</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col">
+                <!-- Menú desplegable-->
+                <div class="dropdown">
+                    <!--Con dos botones separados -->
+                    <div class="btn-group">
+                        <button  class="btn btn-primary">Botón</button>
+                        <button type="button" 
+                            class="btn btn-dark dropdown-toggle dropdown-toggle-split" 
+                            id="dropdown-3"
+                            data-bs-toggle="dropdown" aria-expanded="false" aria-label="boton">
+                            <span class="visually-hidden">Mostrar / Ocultar menú</span>
+                        </button>
+                        <!--Las opciones del menú -->
+                        <ul class="dropdown-menu" aria-labelledby="dropdown-3">
+                            <li><a href="#" class="dropdown-item">Elemento #1</a></li>
+                            <li><a href="#" class="dropdown-item">Elemento #2</a></li>
+                            <li><a href="#" class="dropdown-item">Elemento #3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <!-- Menú desplegable personalizado -->
+                <div class="dropdown">
+                    <!--Boton con opciones de menú separadas y encabezados -->                    
+                    <button type="button" class="btn btn-primary  dropdown-toggle" id="dropdown-4"
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-label="boton">
+                        Menú desplegable
+                    </button>
+                    <!--Las opciones del menú -->
+                    <ul class="dropdown-menu" aria-labelledby="dropdown-4">
+                        <li><h5 class="dropdown-header">Encabezado</h5></li>
+                        <li><a href="#" class="dropdown-item">Nuevo</a></li>
+                        <li><a href="#" class="dropdown-item">Abrir</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a href="#" class="dropdown-item">Copiar</a></li>
+                        <li><a href="#" class="dropdown-item">Cortar</a></li>
+                        <li><a href="#" class="dropdown-item">Pegar</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="js/bootstrap.bundle.min.js"></script>   
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        window.onload = () => {
+            $("#dropdown-1").click()
+        }
+    </script>
 </body>
+
 </html>
