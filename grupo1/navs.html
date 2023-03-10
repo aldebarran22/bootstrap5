@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navs</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">   
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Por defecto se alinea a la izq.-->
+                <ul class="nav">
+                    <li><a href="#" class="nav-link">Inicio</a></li>
+                    <li><a href="#" class="nav-link">Galería</a></li>
+                    <li><a href="#" class="nav-link disabled">Administración</a></li>
+                    <li><a href="#" class="nav-link">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col-12">              
+                <ul class="nav justify-content-center">
+                    <li><a href="#" class="nav-link">Inicio</a></li>
+                    <li><a href="#" class="nav-link">Galería</a></li>
+                    <li><a href="#" class="nav-link disabled">Administración</a></li>
+                    <li><a href="#" class="nav-link">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col-12">                
+                <ul class="nav justify-content-end">
+                    <li><a href="#" class="nav-link">Inicio</a></li>
+                    <li><a href="#" class="nav-link">Galería</a></li>
+                    <li><a href="#" class="nav-link disabled">Administración</a></li>
+                    <li><a href="#" class="nav-link">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row my-5">
+            <ul class="nav flex-column">
+                <li><a href="#" class="nav-link">Inicio</a></li>
+                <li><a href="#" class="nav-link">Galería</a></li>
+                <li><a href="#" class="nav-link disabled">Administración</a></li>
+                <li><a href="#" class="nav-link">Blog</a></li>
+            </ul>
+        </div>
+        <!-- Ejemplo con pestañas y dropdown -->
+        <div class="row my-5">
+            <div class="col-4">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a href="#" class="nav-link">Opción 1</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Opción 2</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Opción 3</a></li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#" class="nav-link">Opción 1</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Opción 2</a></li>
+                    <!--Una opción es un submenú -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link dropdown-toggle"
+                        data-bs-toggle="dropdown" role="button" aria-expanded="false"
+                        >Submenú 3</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Elem1</a></li>
+                            <li><a href="#" class="dropdown-item">Elem2</a></li>
+                            <li><a href="#" class="dropdown-item">Elem3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item"><a href="#" class="nav-link">Opción 1</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Opción 2</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Opción 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>   
+</body>
+</html>

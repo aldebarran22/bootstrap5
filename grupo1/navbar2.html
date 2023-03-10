@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            min-height: 2000px;
+            padding-top: 56px; /*Para saltar el alto de la navbar */
+        }
+
+        .navbar a svg {
+            height: 32px;
+            width: 32px;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <!-- Para crear un menú más robusto-->
+    <!-- Expande la barra y hace visible el menú a partir del tamaño large-->
+    <!-- Barra de navegación fija arriba -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <!-- Titulo o icono de la aplicación de la izq: -->
+            <a href="#" class="navbar-brand" title="curso">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z" />
+                    <path
+                        d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z" />
+                </svg>
+            </a>
+
+            <!-- El botón cuando se minimiza -->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Mostrar / Ocultar menú">
+                <!-- EL icono de las 3 rayas-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Opciones del menú principal con un id
+            que se relaciona con el botón a partir de data-bs-toggle -->
+            <div class="collapse navbar-collapse" id="menu">
+                <!-- me-auto: margin-right auto: aplicar margin a la derecha auto. -->
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                    <!-- Opción con un submenú -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Galería</a>
+
+                        <!-- Opción del dropdown -->
+                        <ul class="dropdown-menu" aria-labelledby="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Verano</a></li>
+                            <li><a href="#" class="dropdown-item">Año 2019</a></li>
+                            <li><a href="#" class="dropdown-item">Navidad</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Caja de búsqueda de la derecha -->
+                <form action="" class="d-flex justify-content-end">                   
+                    <input type="search" class="form-control" placeholder="Buscar" aria-label="Buscar">
+                    <button type="submit" class="btn btn-outline-light ms-2">Buscar</button>                
+                </form>
+            </div>           
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col px-1">
+                <h2>Mi libro</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, cumque deleniti iste aut voluptatum illo molestiae a iure, tenetur expedita voluptates facere minima laudantium, eaque nulla iusto totam voluptatibus eum amet molestias nihil! Eos debitis obcaecati perspiciatis veritatis maxime consectetur dolore reiciendis eius omnis expedita amet tenetur cumque ipsa, quibusdam voluptatibus laudantium soluta repellendus, officia accusantium! Maxime corrupti repellendus libero consequatur voluptatem impedit in laborum ullam odit, aperiam, obcaecati sapiente iusto illum ipsa itaque minima doloremque quidem eligendi nostrum. Fuga quia, distinctio recusandae commodi iusto, vero ducimus corrupti eius, eos maxime nulla inventore incidunt architecto sequi sit totam expedita! Temporibus dolorem possimus repudiandae incidunt suscipit sit quibusdam velit vitae cupiditate quam repellendus fugit, sapiente aliquam reprehenderit ab, assumenda illum? Placeat, ea officiis corrupti, nemo debitis minus iste consequuntur, ratione aut iure iusto repellendus deleniti impedit consequatur non sint asperiores. Expedita assumenda eius quasi a, unde eos enim minus hic? Saepe, culpa? Deleniti dolorem vitae doloribus incidunt accusantium maxime molestias earum, velit iure! Impedit quo ab velit a eaque eum aspernatur cum, quas cupiditate, animi exercitationem, provident commodi accusamus mollitia facilis maxime. Ipsum iusto, dolores adipisci est eius quia architecto saepe rerum! Illum sed dolorem perferendis nam vel reprehenderit ullam. Commodi veritatis, ipsam in debitis soluta molestias qui fugit ab. Provident, iste animi aliquam aperiam at, accusamus earum autem commodi voluptas quis quod. Possimus itaque temporibus at. Cumque necessitatibus repudiandae quidem dolorem alias eaque mollitia ipsum vitae perspiciatis. Tempora ipsa autem illum recusandae possimus odio qui commodi dignissimos iure repudiandae odit non deleniti dicta explicabo, nisi quaerat consequuntur pariatur aliquam laborum. Fugit distinctio repellat labore, itaque quae, quod nam officia maxime consequatur facilis esse eum? Esse, quis alias possimus obcaecati harum odit suscipit optio officia necessitatibus vitae, sint ipsum enim quaerat? Vitae rem aliquid ad natus provident magnam tempora consequatur repellat.</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

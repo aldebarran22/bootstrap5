@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OffCanvas</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">   
+    <style>
+        .offcanvas .offcanvas-body {           
+            background: #7f7f7f;
+            color: blue;           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                 <div>
+                    <!-- El enlace hace referencia al id del otro contenedor-->
+                    <a href="#offcanvas1"
+                    class="btn btn-primary"
+                    data-bs-toggle="offcanvas"
+                    role="button"
+                    aria-controls="offcanvas1"
+                    >Abrir offcanvas</a>
+                    <!--offcanvas-start / ...end / bottom / top -->
+                    <div class="offcanvas offcanvas-end" tabindex="-1"
+                    id="offcanvas1" data-bs-backdrop="true">
+                        <!--Cabecera con el boton de cerrar -->
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title">Título</h5>
+                            <button type="button" class="btn-close"
+                            data-bs-dismiss="offcanvas" aria-label="cerrar"
+                            ></button>
+                        </div>
+                        <!-- Cuerpo del offcanvas -->
+                        <div class="offcanvas-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo repudiandae animi odit id cum veritatis repellat? Quidem distinctio quibusdam aut nemo eius at cum eligendi odio libero, dolorum nulla numquam fugit atque illum quisquam ipsa itaque nostrum, autem labore placeat ratione incidunt. Reiciendis saepe doloremque rem ex dolore nesciunt sit non similique accusamus vel expedita natus, laboriosam eos tempore? Sapiente maiores inventore perspiciatis dolor aliquam dolores sit aperiam ipsa id?</p>
+                        </div>                                 
+                    </div>
+                 </div>             
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>   
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .navbar a svg {
+            height: 32px;
+            width: 32px;
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Para crear un menú más robusto-->
+    <!-- Expande la barra y hace visible el menú a partir del tamaño large-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- Titulo o icono de la aplicación de la izq: -->
+            <a href="#" class="navbar-brand" title="curso">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z" />
+                    <path
+                        d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z" />
+                </svg>
+            </a>
+
+            <!-- El botón cuando se minimiza -->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Mostrar / Ocultar menú">
+                <!-- EL icono de las 3 rayas-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Opciones del menú principal con un id
+                        que se relaciona con el botón a partir de data-bs-toggle -->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                    <!-- Opción con un submenú -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Galería</a>
+
+                        <!-- Opción del dropdown -->
+                        <ul class="dropdown-menu" aria-labelledby="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Verano</a></li>
+                            <li><a href="#" class="dropdown-item">Año 2019</a></li>
+                            <li><a href="#" class="dropdown-item">Navidad</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Caja de búsqueda de la derecha -->
+        </div>
+    </nav>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
