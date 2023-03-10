@@ -51,12 +51,27 @@ header .menu .enlaceC:HOVER {background: #002D44;}
     opacity: .4;
 }
 
+/* ESTILOS ACERCA-DE*/
+
+
+/* BARRAS DE PROGRESO */
+.ancho_65 {
+    width:65%;
+}
+
+.ancho_85 {
+    width:85%;
+}
+
+
+
 /* ESTILOS DE LA ventana modal */
 .modal-dialog {
     max-width: 1000px;
 }
 
 /* ESTILOS DEL FOOTER */
+
 
 
 /* Mediano */

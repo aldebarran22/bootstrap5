@@ -19,4 +19,12 @@ window.onload = () => {
             imagenModal.src = pathImg;
         });
     });
+
+    // Establecer el width de las barras:
+    const barrasProgreso = document.querySelectorAll('.progress-bar')
+    barrasProgreso.forEach((barra)=>{
+        porcentaje = barra.ariaValueNow
+        //console.log('barra: '+ porcentaje)
+        barra.style.width = porcentaje + "%";
+    })
 }

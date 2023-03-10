@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OffCanvas</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .offcanvas .offcanvas-body {
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div>
+                    <a href="#offcanvas1" class="btn btn-primary" data-bs-toggle="offcanvas" role="button"
+                        aria-controls="offcanvas1">Abrir offcanvas</a>
+
+                    <!-- Contenedor que se muestra: -->
+                    <!-- offcanvas-md a partir de md quita. EL contenido de la pestaña
+                    forma parte del contenedor principal, no da la opción de abrir 
+                    o cerrarlo-->
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas1" aria-labelledby="offcanvas1"
+                        data-bs-backdrop="true">
+                        <!-- header-->
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title">Título</h5>
+                            <!-- Botón del aspa para cerrar -->
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="cerrar">
+                            </button>
+                        </div>
+
+                        <!-- Body -->
+                        <div class="offcanvas-body">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate voluptates corporis
+                                doloremque. Sed quis error ea laboriosam id necessitatibus, repellendus quo tempore
+                                quasi minus amet vitae excepturi, libero voluptatum saepe ullam nisi consectetur
+                                perferendis a quam voluptate pariatur suscipit eum! Placeat sapiente veritatis ullam
+                                molestiae cupiditate exercitationem consequuntur officia eaque, mollitia, accusantium
+                                quasi eligendi doloribus quaerat sit, debitis reiciendis totam. Nobis libero, expedita
+                                doloremque consectetur autem fuga quo omnis dignissimos laborum ad, ipsum repellendus
+                                tempora. Tempora nesciunt animi explicabo ducimus esse, delectus iste, eos porro tempore
+                                aspernatur, vero deserunt similique. Impedit eaque alias repellat corporis ea illo quod,
+                                illum suscipit, accusamus velit magni sunt error incidunt quibusdam tempora dolores.
+                                Blanditiis atque est velit dolor nulla expedita perferendis. Quisquam aperiam nesciunt
+                                rem voluptatum architecto repudiandae, iste similique, et temporibus ad hic non quod
+                                suscipit enim expedita accusantium impedit dicta amet pariatur repellat voluptate cum.
+                                Dolor, quasi labore, amet veritatis fuga nostrum cumque optio laboriosam autem est
+                                aliquid, modi ipsa harum nihil corporis praesentium placeat hic ipsam eligendi
+                                voluptates nemo voluptas atque! Enim vel, voluptatem sunt quod facere officiis commodi
+                                ad! Veniam similique numquam nostrum assumenda id laboriosam explicabo. Vel, autem
+                                officia incidunt modi vitae asperiores? At magni quos iure doloremque ut recusandae
+                                aperiam nam? Consequatur, vel error dignissimos eligendi doloribus alias, nobis aut nisi
+                                dicta ex nam sint! Deserunt est, minima expedita mollitia officia corporis harum veniam
+                                rem culpa quibusdam animi accusamus laboriosam fugiat modi, commodi magni sequi soluta,
+                                sapiente eaque quisquam repellendus atque dolores. Veniam mollitia, odio molestiae unde
+                                necessitatibus saepe quam nulla ratione rem, itaque culpa aliquid ducimus adipisci in
+                                tenetur. Cupiditate quae aliquam ipsa quod voluptatibus. Voluptatem quaerat facilis
+                                praesentium dolores inventore vero, molestiae laudantium est consequuntur cumque culpa
+                                eveniet porro totam quod omnis iusto. Nostrum vitae, corporis vel, distinctio sit sunt
+                                laborum ea adipisci, inventore quaerat libero?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

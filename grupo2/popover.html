@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popovers</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        button {
+            margin-top: 150px;
+            margin-left: 190px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row my-5">
+            <div class="col">
+                <button class="btn btn-primary"
+                data-bs-toggle="popover"
+                title="Título"
+                data-bs-content="Contenido del popover"
+                data-bs-placement="left"
+                >Click!</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.onload=()=>{
+            // Buscar todas las etiquetas que tengan el atributo data-bs-toggle 
+            // con el valor 'popover'
+            var listaPopover = document.querySelectorAll('[data-bs-toggle="popover"]')
+            //console.log('lista de: '+listaPopover.length)
+            var lista = [].slice.call(listaPopover)
+            var popoverList = lista.map((item)=>{
+                return new bootstrap.Popover(item)
+            })
+        }
+        
+    </script>
+</body>
+</html>
