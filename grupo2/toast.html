@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificaciones Toast</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .derecha {
+            top:0;
+            right:0;
+        }
+
+        .izquierda {
+            top:0;
+            left:0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenedor de notificaciones -->
+    <!-- Podemos elegir a que lado se colocan izquierda o derecha pero son todas -->
+    <!-- Para poder cerrar los toast con el botón añadir el att. data-bs-dismiss="toast" -->
+    <div class="toast-container position-absolute p-3 izquierda">
+        <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Título</strong>
+                <small class="text-danger">hace 1 minuto</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="cerrar"></button>
+            </div>
+            <div class="toast-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, modi?</p>
+            </div>
+        </div>
+        <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">           
+            <div class="toast-body bg-primary-subtle">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, modi?</p>
+            </div>
+        </div>
+        <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Título</strong>
+                <small class="text-danger">hace 1 minuto</small>
+                <button type="button" class="btn-close" aria-label="cerrar"></button>
+            </div>
+            <div class="toast-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, modi?</p>
+            </div>
+        </div>
+    </div>
+    <div class="toast-container position-absolute p-3 derecha">
+        <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Título</strong>
+                <small class="text-danger">hace 1 minuto</small>
+                <button type="button" class="btn-close" aria-label="cerrar"></button>
+            </div>
+            <div class="toast-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, modi?</p>
+            </div>
+        </div>
+        <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Título 2</strong>
+                <small class="text-danger">hace 3 minuto</small>
+                <button type="button" class="btn-close" aria-label="cerrar"></button>
+            </div>
+            <div class="toast-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, modi?</p>
+            </div>
+        </div>
+        <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Título</strong>
+                <small class="text-danger">hace 1 minuto</small>
+                <button type="button" class="btn-close" aria-label="cerrar"></button>
+            </div>
+            <div class="toast-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, modi?</p>
+            </div>
+        </div>
+    </div>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est atque explicabo excepturi numquam vero eum, molestiae aperiam minus, illum delectus quae fugiat rerum nesciunt velit, dolores exercitationem iure ut sint perspiciatis ab? Illum neque sunt recusandae dolore nulla distinctio! Nihil similique libero nam. Sunt nihil soluta, repellat cum blanditiis facilis maiores, nemo possimus non sit ut enim quo provident culpa veritatis rem temporibus eius ipsum cumque fugiat voluptatum at consequuntur! Veniam, ipsam. Reprehenderit, temporibus? Vel velit officia ratione facere provident vero quidem doloribus eius illo repudiandae itaque exercitationem suscipit numquam voluptates vitae aperiam dicta animi mollitia enim ipsa optio quibusdam recusandae, consequuntur excepturi. Dolorum, illo iste numquam, dignissimos ipsa minima, ut quam maiores consequuntur et modi nemo necessitatibus veritatis aspernatur ea quisquam enim expedita odit placeat nostrum! In veniam rem quam reiciendis vel illo quos, autem at dicta commodi facilis neque vero nulla nam delectus sint consequuntur. Incidunt, iste sequi omnis cupiditate officia odio nihil voluptatum, placeat, laudantium sapiente quidem quae? Et, maiores. Officia ad culpa autem tempora veniam beatae expedita sunt aut rem, adipisci voluptatibus sint quos sequi illo vero? Nostrum beatae maiores, deleniti accusamus, nemo inventore enim, non dolor suscipit praesentium voluptates autem. Ipsum repellendus vel et culpa, tempora, tenetur dignissimos dolorum ducimus, repudiandae excepturi facilis quis voluptatem illo aliquam nulla. Non maxime nam excepturi cupiditate omnis ratione, ea molestiae minima quam harum nemo, quaerat amet? Enim accusantium id obcaecati excepturi sint qui, voluptatibus quas facere velit fugiat laudantium, provident laboriosam nulla numquam debitis cupiditate incidunt recusandae aliquam. Autem magnam ipsa at laudantium sequi hic doloremque corrupti inventore veritatis amet. Eaque, optio repellendus maxime, repellat veniam debitis, assumenda facilis similique voluptatibus iusto dignissimos officiis sapiente magnam corporis. Exercitationem voluptate veniam at numquam est autem explicabo iusto, maiores quis ad aliquam soluta temporibus! Magnam harum nihil quidem eum eius repellat in at, doloremque, error fugiat tenetur eligendi id ratione repellendus hic pariatur laudantium distinctio odio consectetur laboriosam? In deserunt velit eligendi adipisci, magnam ipsum doloribus eaque recusandae eos consequatur inventore dolore ipsam ea eius minima odio, obcaecati at omnis! Ut ullam temporibus amet veniam. Dicta commodi placeat maiores quibusdam earum dolorem minima ullam unde tenetur libero nobis, iusto incidunt dolores ipsa quisquam nostrum itaque, impedit accusantium consequatur! Dolorem accusamus asperiores aliquid porro obcaecati! Eveniet eligendi natus similique, harum nostrum enim eaque et pariatur necessitatibus ducimus explicabo. Vero labore eveniet sapiente dolorem ipsam totam sequi debitis in quam autem voluptatem maxime minus, optio ab quasi ducimus quod. Molestias quidem, ad commodi porro maiores rem obcaecati sed quam. Rerum dolorem a magni provident odio optio pariatur atque. Dolorum incidunt reprehenderit sint. Iste, maxime! Aliquam illo placeat distinctio consectetur aliquid iusto libero sapiente tenetur. Omnis doloribus perspiciatis natus unde corporis architecto pariatur deleniti atque maiores non ducimus voluptatibus dolores, ea recusandae placeat error cum rem? Sed blanditiis voluptatum necessitatibus, recusandae veritatis nisi pariatur repellendus neque vel dicta, ea architecto expedita iste perspiciatis fugiat natus sapiente vero voluptatibus illo? Reiciendis fugit minus non maxime provident, blanditiis rerum assumenda eaque consequuntur doloribus dolore quod.</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

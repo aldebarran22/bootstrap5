@@ -53,24 +53,86 @@ header .menu .enlaceC:HOVER {background: #002D44;}
 
 /* ESTILOS ACERCA-DE*/
 
+.acerca-de {
+    background-color: #cfcfcf;
+    padding:20px;
+    margin-top: 20px;    
+}
+
+.acerca-de .foto .nombre {
+    letter-spacing: 2px;
+}
+
+.acerca-de .info .resumen {
+    letter-spacing: 1px;
+}
+
 
 /* BARRAS DE PROGRESO */
-.ancho_65 {
-    width:65%;
+.acerca-de .info .label {
+    font-size: 18px;
+    color: #005385;
+    margin-bottom: 10px;
+    font-weight: 600;
 }
 
-.ancho_85 {
-    width:85%;
+.acerca-de .info .progress {
+    background-color: #005385;
+    border-radius: 0;
+    height: 25px;
 }
 
+.acerca-de .info .progress .progress-bar {
+    background-color: #3da5e2;
+
+}
+
+/* Formulario de contacto */
+.contacto {
+    background-color: #dfdfdf;
+}
+
+.contacto form {
+    padding:20px;
+}
+
+/* FOOTER: Redes Sociales */
+.redes-sociales {   
+    padding:20px;
+    margin-top: 20px;    
+}
+
+.redes-sociales .icono {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius:100px;
+    color: #fff;
+    margin: 0px 20px;
+}
+
+.redes-sociales .icono svg {
+    height: 40px;
+    width: 40px;
+}
+
+.redes-sociales .twitter {
+    background-color: #1da1f2;
+}
+
+.redes-sociales .instagram {
+    background-color: #833ab4;
+}
+
+.redes-sociales .facebook {
+    background-color: #3b5998;
+}
 
 
 /* ESTILOS DE LA ventana modal */
 .modal-dialog {
     max-width: 1000px;
 }
-
-/* ESTILOS DEL FOOTER */
 
 
 
