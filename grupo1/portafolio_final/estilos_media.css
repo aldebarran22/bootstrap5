@@ -1,5 +1,9 @@
+:root {
+    --color_fondo: #f2f2f2;
+}
+
 body {
-    background: #f2f2f2;
+    background: var(--color_fondo);
     font-family: Tahoma, Verdana, Geneva, sans-serif
 }
 
@@ -49,6 +53,81 @@ header .menu .enc_contacto:HOVER { background: #002d44; }
 .contenedor-img a:HOVER img {
     opacity: .3;
 }
+
+/* Sección Acerca De */
+.acerca-de {
+    background: #dfdfdf;    
+    padding: 20px;
+}
+
+.acerca-de .foto .nombre {
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.acerca-de .info .resumen {
+    letter-spacing: 1px;
+}
+
+.acerca-de .info .label {
+    font-style: 18px;
+    font-style: 600;
+    color: #005385;
+    margin-bottom: 10px;
+}
+
+.acerca-de .info .progress {
+    background-color: #005385;
+    border-radius: 0;
+    height: 25px;
+}
+
+.acerca-de .info .progress .progress-bar {
+    background-color: #3da5e2;
+}
+
+/* Formulario de contacto */
+.contacto {
+    background: #dfdfdf; 
+    margin-top: 20px;   
+}
+
+
+/* Redes Sociales */
+.redes-sociales {
+    padding:40px 0;
+    margin-bottom: 40px;
+}
+
+.redes-sociales .icono {
+    width:100px;
+    height: 100px;
+    color: #fff;
+    background: #cbcbcb;
+    display: inline-block;
+    margin: 0px 20px;
+    text-decoration: none;
+    border-radius: 100px;
+}  
+
+.redes-sociales .icono svg {
+    height:40px;
+    width:40px;
+}
+
+.redes-sociales .twitter {
+    background-color:#1da1f2;
+}
+
+.redes-sociales .instagram { 
+    background-color:#833ab4;
+}
+
+.redes-sociales .facebook {
+    background-color:#3b5998;
+}
+
 
 /* Estilos ventana modal */
 .modal-dialog {

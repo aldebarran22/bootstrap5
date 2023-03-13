@@ -22,4 +22,14 @@ window.onload = () => {
             imagenModal.src = pathImagen
         })
     })
+
+    // ESTABLECER EL ANCHO DE LAS BARRAS DE PROGRESO:
+    // Seleccionar las barras de progreso:
+    const barrasProgreso = document.querySelectorAll('.progress-bar')
+    //console.log('barras de progreso: '+barrasProgreso.length)
+    barrasProgreso.forEach((barra)=>{
+        let porcentaje = barra.ariaValueNow
+        //console.log('Porcentaje: '+porcentaje)
+        barra.style.width = porcentaje + "%";
+    })
 }

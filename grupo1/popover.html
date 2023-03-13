@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popover</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+    <style>
+        .separador {
+            margin-top: 150px;
+            margin-left: 40px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row separador">
+            <div class="col">
+                <button class="btn btn-primary" data-bs-toggle="popover" 
+                title="prueba" data-bs-content="hola" data-bs-placement="top">Top</button>
+
+                <button class="btn btn-primary" data-bs-toggle="popover" 
+                title="prueba" data-bs-content="hola" data-bs-placement="bottom">Bottom</button>
+
+                <button class="btn btn-primary" data-bs-toggle="popover" 
+                title="prueba" data-bs-content="hola" data-bs-placement="left">Left</button>
+
+                <button class="btn btn-primary" data-bs-toggle="popover" 
+                title="prueba" data-bs-content="hola" data-bs-placement="right">Right</button>              
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>  
+    <script>
+        window.onload=()=>{
+            // Inicializar los controles Popover:
+
+            // Recuperar la lista de popover que tenemos en la página.
+            let listaControles = document.querySelectorAll('[data-bs-toggle="popover"]')
+            let popoverList = [].slice.call(listaControles);
+            let lista = popoverList.map((item)=>{
+                // Hay que instanciar cada uno de los popover:
+                return new bootstrap.Popover(item);
+            })
+        }
+    </script> 
+</body>
+</html>

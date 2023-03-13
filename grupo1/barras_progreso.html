@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barras de progreso</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">      
+</head>
+<body>
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-4">
+                <div class="progress">
+                    <div class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    title="25">
+                        25%
+                    </div>
+                </div> 
+            </div>
+            <div class="col-4">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped"
+                    role="progressbar"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    title="50">
+                        50%
+                    </div>
+                </div> 
+            </div>
+            <div class="col-4">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                    role="progressbar"
+                    aria-valuenow="85"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    title="85">
+                        85%
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>   
+    <script>
+        window.onload = ()=>{
+            // Seleccionar las barras de progreso:
+            const barrasProgreso = document.querySelectorAll('.progress-bar')
+            //console.log('barras de progreso: '+barrasProgreso.length)
+            barrasProgreso.forEach((barra)=>{
+                let porcentaje = barra.ariaValueNow
+                //console.log('Porcentaje: '+porcentaje)
+                barra.style.width = porcentaje + "%";
+            })
+        }
+    </script>
+</body>
+</html>
